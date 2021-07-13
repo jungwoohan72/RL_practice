@@ -36,11 +36,9 @@ class REINFORCE(nn.Module):
 
     def get_action(self, state):
         with torch.no_grad():
-            logits = self.policy(state)
+            logits = self.policy(state).to('cuda')
             dist = Categorical(logits=logits)
-            print(dist)
             a = dist.sample()
-            print(a)
         return a
 
     @staticmethod
@@ -65,18 +63,74 @@ class REINFORCE(nn.Module):
 
         g = 0
         for s, a, r in zip(states, actions, rewards):
-            g = r + self.gamma * gmodule
+            g = r + self.gamma * g
+            dist = Categorical(logits=self.policy(s))
+            prob = dist.probs[a]
+
+            # Don't forget to put '-' in the front of pg_loss !!!!!!!!!!!!!!!!
+            # the default behavior of pytorch's optimizer is to minimize the targets
+            # add 'self_eps' to prevent numerical problems of logarithms
+            pg_loss = - torch.log(prob + self._eps) * g
+
             self.opt.zero_grad()
 
             pg_loss.backward()
             self.opt.step()
 
+    def update_episode(self, episode, use_norm=False):
+        # batch update version of REINFORCE
+        states, actions, rewards = self._pre_process_inputs(episode)
+
+        # compute returns
+        returns = []
+        g = 0
+        for r in rewards:
+            g = r + self.gamma * g # now, reward from the final state as flipped
+            returns.append(g)
+        returns = torch.tensor(returns).to('cuda')
+
+        if use_norm:
+            returns = (returns - returns.mean()) / (returns.std() + self._eps)
+            returns.to('cuda')
+
+        # batch computation of action probabilities
+        dist = Categorical(logits=self.policy(states))
+        prob = dist.probs[range(states.shape[0]), actions]
+
+        self.opt.zero_grad()
+
+        # compute policy gradient loss
+        pg_loss = - torch.log(prob + self._eps) * returns  # [num. steps x 1]
+        pg_loss = pg_loss.mean()  # [1]
+        pg_loss = pg_loss
+        pg_loss.backward()
+
+        self.opt.step()
+
+    def update_episodes(self, states, actions, returns, use_norm=False):
+        # episode batch update version of REINFORCE
+
+        if use_norm:
+            returns = (returns - returns.mean()) / (returns.std() + self._eps)
+
+        dist = Categorical(logits=self.policy(states))
+        prob = dist.probs[range(states.shape[0]), actions]
+
+        self.opt.zero_grad()
+
+        # compute policy gradient loss
+        pg_loss = - torch.log(prob + self._eps) * returns.squeeze()  # [num. steps x 1]
+        pg_loss = pg_loss.mean()  # [1]
+        pg_loss.backward()
+
+        self.opt.step()
+
 env = gym.make('CartPole-v1')
 s_dim = env.observation_space.shape[0]
 a_dim = env.action_space.n
 
-net = MLP(s_dim, a_dim, [128])
-agent = REINFORCE(net)
+net = MLP(s_dim, a_dim, [128]).to('cuda')
+agent = REINFORCE(net).to('cuda')
 ema = EMAMeter()
 
 n_eps = 10000
@@ -91,7 +145,7 @@ for ep in range(n_eps):
     rewards = []
 
     while True:
-        s = to_tensor(s, size=(1, 4))
+        s = to_tensor(s, size=(1, 4)).to('cuda')
         a = agent.get_action(s)
         ns, r, done, info = env.step(a.item())
 
@@ -100,6 +154,7 @@ for ep in range(n_eps):
         rewards.append(r)
 
         s = ns
+
         cum_r += r
         if done:
             break

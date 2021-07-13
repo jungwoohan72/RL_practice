@@ -39,11 +39,13 @@ lr = 1e-4 * 5
 batch_size = 256
 gamma = 1.0
 memory_size = 50000
-total_eps = 3000
-eps_max = 0.08
+total_eps = 5000
+eps_max = 0.080
 eps_min = 0.01
 sampling_only_until = 2000
 target_update_interval = 10
+
+print(torch.cuda.is_available())
 
 qnet = MLP(4,2, num_neurons=[128])
 qnet_target = MLP(4,2, num_neurons=[128])

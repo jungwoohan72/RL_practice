@@ -19,7 +19,7 @@ class DQN(nn.Module):
 
     def get_action(self, state):
         qs = self.qnet(state) # output possible actions (+1 or -1) at certain state
-        prob = np.random.uniform(0.0, 1.0, 1) 
+        prob = np.random.uniform(0.0, 1.0, 1)
 
         # epsilon-greedy
         if torch.from_numpy(prob).float() <= self.epsilon: # random
