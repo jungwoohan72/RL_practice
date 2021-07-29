@@ -45,15 +45,18 @@ eps_min = 0.01
 sampling_only_until = 2000
 target_update_interval = 10
 
+PATH = './RL_practice/DQN/weights/'
+
 print(torch.cuda.is_available())
 
-qnet = MLP(4,2, num_neurons=[128])
-qnet_target = MLP(4,2, num_neurons=[128])
-
-qnet_target.load_state_dict(qnet.state_dict())
-agent = DQN(4,1,qnet=qnet, qnet_target=qnet_target, lr=lr, gamma=gamma, epsilon = 1.0)
 env = gym.make('CartPole-v1')
 memory = ReplayBuffer(memory_size)
+
+qnet = MLP(env.observation_space.shape[0], env.action_space.n, num_neurons=[128])
+qnet_target = MLP(env.observation_space.shape[0], env.action_space.n, num_neurons=[128])
+
+qnet_target.load_state_dict(qnet.state_dict())
+agent = DQN(env.observation_space.shape[0],1,qnet=qnet, qnet_target=qnet_target, lr=lr, gamma=gamma, epsilon = 1.0)
 
 print_every = 100
 
@@ -64,6 +67,7 @@ for n_epi in range(total_eps):
     cum_r = 0
 
     while True:
+        # env.render()
         s = to_tensor(s,size=(1,4))
         a = agent.get_action(s)
         ns, r, done, info = env.step(a)
@@ -87,3 +91,5 @@ for n_epi in range(total_eps):
     if n_epi % print_every == 0:
         msg = (n_epi, cum_r, epsilon)
         print("Episode : {:4.0f} | Cumulative Reward : {:4.0f} | Epsilon: {:.3f}".format(*msg))
+
+torch.save(qnet.state_dict(), PATH + 'Naive_DQN_state_dict.pt')
