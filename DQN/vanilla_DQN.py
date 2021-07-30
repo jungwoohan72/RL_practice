@@ -2,7 +2,6 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-
 class DQN(nn.Module):
     def __init__(self, state_dim:int, action_dim:int, qnet:nn.Module, qnet_target:nn.Module, lr:float, gamma:float, epsilon: float):
         super(DQN, self).__init__()

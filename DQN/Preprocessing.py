@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import torch
 
-def preprocess_frame(screen, exclude, output):
+def preprocess_image(image, exclude, target_height, target_width):
     """Preprocess Image.
         
         Params
@@ -12,17 +12,17 @@ def preprocess_frame(screen, exclude, output):
             output (int): Size of output image
         """
     # TConver image to gray scale
-    screen = cv2.cvtColor(screen, cv2.COLOR_RGB2GRAY)
+    image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
     
     #Crop screen[Up: Down, Left: right] 
-    screen = screen[exclude[0]:exclude[2], exclude[3]:exclude[1]]
-    
-    # Convert to float, and normalized
-    screen = np.ascontiguousarray(screen, dtype=np.float32) / 255
+    image = image[exclude[0]:exclude[1], exclude[2]:exclude[3]]
     
     # Resize image to 84 * 84
-    screen = cv2.resize(screen, (output, output), interpolation = cv2.INTER_AREA)
-    return screen
+    image = cv2.resize(image, (target_height, target_width), interpolation = cv2.INTER_AREA)
+
+    # Convert to float, and normalized
+    image = image.reshape(target_height, target_width) / 255
+    return image
 
 def prepare_training_inputs(sampled_exps, device='cpu'):
     states = []

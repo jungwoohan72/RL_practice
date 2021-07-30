@@ -9,7 +9,7 @@ import gym
 
 import matplotlib.pyplot as plt
 
-from Preprocessing import preprocess_frame, prepare_training_inputs, stack_frame
+from Preprocessing import preprocess_image, prepare_training_inputs, stack_frame
 
 import numpy as np
 from vanilla_DQN import DQN
@@ -23,87 +23,96 @@ env.seed(0)
 print('Size of frame: ', env.observation_space.shape)
 print('Action space: ', env.action_space.n)
 
-# Visualize Frame
-# env.reset()
+# Grayscale and Preprocessed Image
 # plt.figure()
 # plt.imshow(env.reset())
-# plt.title('Original Frame')
-# plt.show()
-
-# Grayscale and Preprocessed Image
-# env.reset()
-# plt.figure()
-# plt.imshow(preprocess_frame(env.reset(), (30, -4, -12, 4), 84), cmap="gray")
+# plt.imshow(preprocess_image(env.reset(), (20, env.observation_space.shape[0], 0, env.observation_space.shape[1]), 84, 64 ), cmap="gray")
 # plt.title('Pre Processed image')
 # plt.show()
 
-lr = 1e-4 * 5
-batch_size = 256
-gamma = 1.0
-memory_size = 50000
-total_eps = 5000
-eps_max = 0.080
-eps_min = 0.01
-sampling_only_until = 2000
-target_update_interval = 10
+############################################## Main Code ##############################################
 
-# in_channels = 4 # 4 input images 
-# input_shape = 4*84*84
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+PATH = './RL_practice/DQN/weights/'
 
-# PATH = './RL_practice/DQN/weights/'
+SAVE_MODELS = True  # Save models to file so you can test later
+MODEL_PATH = './RL_practice/DQN/weights/'  # Models path for saving or loading
+SAVE_MODEL_INTERVAL = 10  # Save models at every X epoch
+TRAIN_MODEL = True  # Train model while playing (Make it False when testing a model)
+TARGET_UPDATE_INTERVAL = 10
 
-# print(torch.cuda.is_available())
+LOAD_MODEL_FROM_FILE = False  # Load model from file
+LOAD_FILE_EPISODE = 0  # Load Xth episode from file
 
-# env = gym.make('CartPole-v1')
-# memory = ReplayBuffer(memory_size)
+BATCH_SIZE = 64  # Minibatch size that select randomly from mem for train nets
+MAX_EPISODE = 100000  # Max episode
+MAX_STEP = 100000  # Max step size for one episode
 
-# qnet = CNN(in_channels, env.action_space.n)
-# qnet_target = CNN(in_channels, env.action_space.n)
+MAX_MEMORY_LEN = 50000  # Max memory len
+MIN_MEMORY_LEN = 10000  # Min memory len before start train
 
-# qnet_target.load_state_dict(qnet.state_dict())
-# agent = DQN(input_shape,1,qnet=qnet, qnet_target=qnet_target, lr=lr, gamma=gamma, epsilon = 1.0)
+GAMMA = 0.97  # Discount rate
+ALPHA = 1e-4 * 5  # Learning rate
+EPS_MIN = 0.010
+EPS_MAX = 0.080
 
-# print_every = 100
+RENDER_GAME_WINDOW = False  # Opens a new window to render the game (Won't work on colab default)
 
-# for n_epi in range(total_eps):
-#     epsilon = max(eps_min, eps_max-eps_min*(n_epi/200))
-#     agent.epsilon = torch.tensor(epsilon)
-#     s = np.stack(env.reset()
-#     cum_r = 0
+IN_CHANNELS = 4 # 4 sequential frames as input -> 4 channel input
 
-#     while True:
-#         # env.render()
-#         # s = to_tensor(s,size=(1,4))
-#         a = agent.get_action(s)
-#         ns, r, done, info = env.step(a)
+memory = ReplayBuffer(MAX_MEMORY_LEN)
 
-#         experience = (s,torch.tensor(a).view(1,1),torch.tensor(r/100.0).view(1,1), torch.tensor(ns).view(1,4),torch.tensor(done).view(1,1))
-#         memory.push(experience)
+qnet = CNN(IN_CHANNELS, env.action_space.n)
+qnet_target = CNN(IN_CHANNELS, env.action_space.n)
+qnet_target.load_state_dict(qnet.state_dict())
 
-#         s = ns
-#         cum_r += r
-#         if done:
-#             break
+agent = DQN(4,1,qnet=qnet, qnet_target=qnet_target, lr=ALPHA, gamma=GAMMA, epsilon = 1.0) # 4 sequential channel input
 
-#     if len(memory) >= sampling_only_until:
-#         sampled_exps = memory.sample(batch_size)
-#         sampled_exps = prepare_training_inputs(sampled_exps)
-#         agent.update(*sampled_exps)
+print_every = 10
 
-#     if n_epi % target_update_interval == 0:
-#         qnet_target.load_state_dict(qnet.state_dict())
-    
-#     if n_epi % print_every == 0:
-#         msg = (n_epi, cum_r, epsilon)
-#         print("Episode : {:4.0f} | Cumulative Reward : {:4.0f} | Epsilon: {:.3f}".format(*msg))
+for n_epi in range(MAX_EPISODE):
+    epsilon = max(EPS_MIN, EPS_MAX-EPS_MIN*(n_epi/200))
+    agent.epsilon = torch.tensor(epsilon)
+    state = env.reset()
+    state = preprocess_image(state, (20, env.observation_space.shape[0], 0, env.observation_space.shape[1]), 84, 64)
 
-# torch.save(qnet.state_dict(), PATH + 'Naive_DQN_state_dict.pt')
+    s = np.stack((state, state, state, state))
+    s = torch.from_numpy(s).float().unsqueeze(0)
 
-def stack_frames(frames, state, is_new=False):
-    frame = preprocess_frame(state, (30, -4, -12, 4), 84)
-    frames = stack_frame(frames, frame, is_new)
+    cum_r = 0
 
-    return frames
+    while True:
+        if RENDER_GAME_WINDOW:
+            env.render()
 
-state = stack_frames(None, env.reset(), True)
-print(state.shape)
+        a = agent.get_action(s)
+        next_state, r, done, info = env.step(a)
+        next_state = preprocess_image(next_state, (20, env.observation_space.shape[0], 0, env.observation_space.shape[1]), 84, 64)
+        next_state = torch.from_numpy(next_state).float()
+
+        temp = s.squeeze()
+        ns = torch.stack((next_state, temp[0,:,:], temp[1,:,:], temp[2,:,:]), dim = 0).unsqueeze(0)
+
+        if TRAIN_MODEL:
+            experience = (s, torch.tensor(a).view(1,1), torch.tensor(r/100.0).view(1,1), ns, torch.tensor(done).view(1,1))
+            memory.push(experience)
+
+        s = ns
+        cum_r += r
+        if done:
+            break
+
+    if len(memory) >= MIN_MEMORY_LEN:
+        sampled_exps = memory.sample(BATCH_SIZE)
+        sampled_exps = prepare_training_inputs(sampled_exps)
+        agent.update(*sampled_exps)
+
+    if n_epi % TARGET_UPDATE_INTERVAL == 0:
+        qnet_target.load_state_dict(qnet.state_dict())
+
+    if n_epi % print_every == 0:
+        msg = (n_epi, cum_r, epsilon)
+        print("Episode : {:4.0f} | Cumulative Reward : {:4.0f} | Epsilon: {:.3f}".format(*msg))
+
+if SAVE_MODELS:
+    torch.save(qnet.state_dict(), PATH + 'Pong_DQN.pt')
