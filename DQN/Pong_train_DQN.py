@@ -44,8 +44,8 @@ TRAIN_MODEL = True  # Train model while playing (Make it False when testing a mo
 TARGET_UPDATE_INTERVAL = 10
 TRAIN_FLAG = True
 
-LOAD_MODEL_FROM_FILE = False  # Load model from file
-LOAD_FILE_EPISODE = 0  # Load Xth episode from file
+LOAD_MODEL_FROM_FILE = True  # Load model from file
+LOAD_FILE_EPISODE = 510  # Load Xth episode from file
 
 BATCH_SIZE = 64  # Minibatch size that select randomly from mem for train nets
 MAX_EPISODE = 100000  # Max episode
@@ -60,7 +60,7 @@ EPS_MIN = 0.010
 EPS_MAX = 1
 EPS_DECAY = 0.99
 
-RENDER_GAME_WINDOW = True  # Opens a new window to render the game (Won't work on colab default)
+RENDER_GAME_WINDOW = False  # Opens a new window to render the game (Won't work on colab default)
 
 IN_CHANNELS = 4 # 4 sequential frames as input -> 4 channel input
 
@@ -76,6 +76,7 @@ print_every = 1
 
 if LOAD_MODEL_FROM_FILE:
     agent.qnet.load_state_dict(torch.load(PATH+str(LOAD_FILE_EPISODE)+".pkl"))
+    agent.qnet_target.load_state_dict(qnet.state_dict())
 
     with open(PATH+str(LOAD_FILE_EPISODE)+'.json') as outfile:
         param = json.load(outfile)
