@@ -15,19 +15,25 @@ class DQN(nn.Module):
 
         self.qnet_target = qnet_target
         self.criteria = nn.SmoothL1Loss()
+        self.loss = 0
 
-    def get_action(self, state):
-        qs = self.qnet(state) # output possible actions (+1 or -1) at certain state
+        self.random_action = 0
+        self.greedy_action = 0
+
+    def get_action(self, state, device='cpu'):
+        qs = self.qnet(state)
         prob = np.random.uniform(0.0, 1.0, 1)
 
         # epsilon-greedy
-        if torch.from_numpy(prob).float() <= self.epsilon: # random
+        if torch.from_numpy(prob).float().to(device) <= self.epsilon: # random
+            self.random_action += 1
             action = np.random.choice(range(self.action_dim)) # choose random action which has dimension of self.action_dim
         else:
+            self.greedy_action += 1
             action = qs.argmax(dim=-1)
         return int(action)
 
-    def update(self, state, action,reward, next_state, done):
+    def update(self, state, action, reward, next_state, done):
         s, a, r, ns = state, action, reward, next_state # provided by step method of env
 
         with torch.no_grad():
@@ -35,7 +41,9 @@ class DQN(nn.Module):
             q_target = r + self.gamma*q_max*(1-done)
 
         q_val = self.qnet(s).gather(1,a)
-        loss = self.criteria(q_val, q_target)
+        # loss = self.criteria(q_val, q_target) # Default L1 loss
+        loss = (q_val - q_target.detach()).pow(2).mean() # MANUAL LOSS
+        self.loss = loss
 
         self.opt.zero_grad()
         loss.backward()

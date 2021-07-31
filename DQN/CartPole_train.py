@@ -56,7 +56,7 @@ qnet = MLP(env.observation_space.shape[0], env.action_space.n, num_neurons=[128]
 qnet_target = MLP(env.observation_space.shape[0], env.action_space.n, num_neurons=[128])
 
 qnet_target.load_state_dict(qnet.state_dict())
-agent = DQN(env.observation_space.shape[0],1,qnet=qnet, qnet_target=qnet_target, lr=lr, gamma=gamma, epsilon = 1.0)
+agent = DQN(env.observation_space.shape[0],2,qnet=qnet, qnet_target=qnet_target, lr=lr, gamma=gamma, epsilon = 1.0)
 
 print_every = 100
 
@@ -67,7 +67,7 @@ for n_epi in range(total_eps):
     cum_r = 0
 
     while True:
-        # env.render()
+        env.render()
         s = to_tensor(s,size=(1,4))
         a = agent.get_action(s)
         ns, r, done, info = env.step(a)
