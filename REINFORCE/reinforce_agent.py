@@ -2,23 +2,26 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
+from torch.distributions.categorical import Categorical
+
 import random
 
 class REINFORCE():
-    def __init__(self, input_shape, action_size, seed, device, gamma, lr, policy):
-        self.input_shape = input_shape
-        self.action_size = action_size
-        self.seed = random.seed(seed)
-        self.device = device
-        self.lr = lr
+    def __init__(self, policy: nn.Module, gamma, lr, device):
+        super(REINFORCE, self).__init__()
+        self.policy = policy.to(self.device)
         self.gamma = gamma
+        self.lr = lr
+        self.device = device
 
-        self.policy_net = policy(input_shape, action_size).to(self.device)
-        self.optimizer = optim.Adam(self.policy_net.parameters(), lr = self.lr)
+        self.optimizer = optim.Adam(self.policy.parameters(), lr = self.lr)
 
-        self.log_probs = []
-        self.rewards = []
-        self.masks = []
+    def get_action(self, state):
+        with torch.no_grad():
+            logits = self.policy(state).to(self.device)
+            dist = Categorical(logits=logits)
+            a = dist.sample()
+        return a
 
     def step(self, log_prob, reward, done):
         self.log_probls.append(log_prob)
@@ -49,4 +52,4 @@ class REINFORCE():
         self.reset_memory()
 
     def reset_memory(self):
-        del 
+        del

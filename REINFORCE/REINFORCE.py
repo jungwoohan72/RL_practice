@@ -67,7 +67,7 @@ class REINFORCE(nn.Module):
             dist = Categorical(logits=self.policy(s))
             prob = dist.probs[a]
 
-            # Don't forget to put '-' in the front of pg_loss !!!!!!!!!!!!!!!!
+            # Don't forget to put '-' in the front of pg_loss !!!!!!!!!!!!!!!! -> Gradient Ascent
             # the default behavior of pytorch's optimizer is to minimize the targets
             # add 'self_eps' to prevent numerical problems of logarithms
             pg_loss = - torch.log(prob + self._eps) * g
@@ -104,7 +104,6 @@ class REINFORCE(nn.Module):
         pg_loss = pg_loss.mean()  # [1]
         pg_loss = pg_loss
         pg_loss.backward()
-
         self.opt.step()
 
     def update_episodes(self, states, actions, returns, use_norm=False):
