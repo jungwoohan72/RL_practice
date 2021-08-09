@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/REINFORCE/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Operation_Research/VRP_Gurobi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Operation_Research/VRP_Gurobi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/REINFORCE/REINFORCE.py" beforeDir="false" afterPath="$PROJECT_DIR$/REINFORCE/REINFORCE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/REINFORCE/reinforce_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/REINFORCE/reinforce_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/REINFORCE/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/REINFORCE/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +316,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628467261131</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="REINFORCE implementation">
+      <created>1628515246673</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1628515246673</updated>
+    </task>
+    <task id="LOCAL-00021" summary=".">
+      <created>1628515262141</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1628515262141</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -339,6 +350,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="category changed" />
+    <MESSAGE value="REINFORCE implementation" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
