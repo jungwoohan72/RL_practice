@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="REINFORCE implementation">
+    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN/Pong_play.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN/Pong_train_DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/train_DQN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN/Pong_train_duelCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/train_duelCNN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../jungwoohan72.github.io" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -43,7 +40,6 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../jungwoohan72.github.io/category" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
@@ -353,7 +349,70 @@
       <option name="project" value="LOCAL" />
       <updated>1628572252988</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary=".">
+      <created>1628572940172</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1628572940172</updated>
+    </task>
+    <task id="LOCAL-00026" summary="REINFORCE update">
+      <created>1628573146137</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1628573146137</updated>
+    </task>
+    <task id="LOCAL-00027" summary=".">
+      <created>1628573799859</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1628573799859</updated>
+    </task>
+    <task id="LOCAL-00028" summary=".">
+      <created>1628573967867</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1628573967867</updated>
+    </task>
+    <task id="LOCAL-00029" summary=".">
+      <created>1628584327870</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1628584327870</updated>
+    </task>
+    <task id="LOCAL-00030" summary=".">
+      <created>1628585111991</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1628585111991</updated>
+    </task>
+    <task id="LOCAL-00031" summary=".">
+      <created>1628594968580</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1628594968580</updated>
+    </task>
+    <task id="LOCAL-00032" summary=".">
+      <created>1628596017151</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1628596017151</updated>
+    </task>
+    <task id="LOCAL-00033" summary=".">
+      <created>1628597272851</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1628597272851</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -373,8 +432,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="category changed" />
-    <MESSAGE value="." />
     <MESSAGE value="REINFORCE implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="REINFORCE implementation" />
+    <MESSAGE value="REINFORCE update" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
