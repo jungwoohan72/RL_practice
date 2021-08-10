@@ -50,6 +50,9 @@ class REINFORCE(nn.Module):
 
         returns = torch.tensor(returns).to(self.device)
 
+        returns = (returns - returns.mean()) / (returns.std() + self._eps)
+        returns.to(self.device)
+
         dist = Categorical(logits = self.policy(states)) # probability for each action -> sampling
         prob = dist.probs[range(states.shape[0]), actions] # (states.shape[0], 1) tensor
 
@@ -58,3 +61,4 @@ class REINFORCE(nn.Module):
         loss = loss.mean()
         loss.backward()
         self.opt.step()
+

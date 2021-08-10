@@ -35,7 +35,7 @@ print('Action space: ', env.action_space.n)
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(DEVICE)
-PATH = './weights//Pong_Deterministic/Pong_DQN_'
+PATH = './weights/Pong_Deterministic/Pong_DQN_'
 
 SAVE_MODELS = True  # Save models to file so you can test later
 MODEL_PATH = './RL_practice/DQN/weights/'  # Models path for saving or loading
