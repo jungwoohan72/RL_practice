@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../DHC" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Operation_Research" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../VRP_DRL_MHA" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../attention-learn-to-route" vcs="Git" />

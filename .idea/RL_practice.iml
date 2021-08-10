@@ -9,5 +9,6 @@
     <orderEntry type="module" module-name="Operation_Research" />
     <orderEntry type="module" module-name="attention-learn-to-route" />
     <orderEntry type="module" module-name="VRP_DRL_MHA" />
+    <orderEntry type="module" module-name="DHC" />
   </component>
 </module>

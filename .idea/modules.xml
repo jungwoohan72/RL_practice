@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../DHC/.idea/DHC.iml" filepath="$PROJECT_DIR$/../DHC/.idea/DHC.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Operation_Research/.idea/Operation_Research.iml" filepath="$PROJECT_DIR$/../Operation_Research/.idea/Operation_Research.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/RL_practice.iml" filepath="$PROJECT_DIR$/.idea/RL_practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/../VRP_DRL_MHA/.idea/VRP_DRL_MHA.iml" filepath="$PROJECT_DIR$/../VRP_DRL_MHA/.idea/VRP_DRL_MHA.iml" />
