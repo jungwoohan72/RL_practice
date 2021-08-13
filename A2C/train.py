@@ -5,6 +5,7 @@ import numpy as np
 
 from torch.distributions.categorical import Categorical
 from MLP import MLP as MLP
+from A2C import A2C as A2C
 from REINFORCE import REINFORCE as REINFORCE
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -18,27 +19,23 @@ env = gym.make('CartPole-v1')
 s_dim = env.observation_space.shape[0]
 a_dim = env.action_space.n
 
-net = MLP(s_dim, a_dim, [128]).to(DEVICE)
-agent = REINFORCE(net, GAMMA, lr, DEVICE).to(DEVICE)
+policy_net = MLP(s_dim, a_dim, [128]).to(DEVICE)
+value_net = MLP(s_dim, 1, [128]).to(DEVICE)
+agent = A2C(policy_net, value_net, GAMMA, lr, DEVICE).to(DEVICE)
 
 for ep in range(n_eps):
     s = env.reset()
     cum_r = 0
 
-    states = []
-    actions = []
-    rewards = []
-
     while True:
         # env.render()
-        s = torch.from_numpy(s).float().to(DEVICE)
-        s = s.view((1, 4))
+        s = torch.from_numpy(s).float().to(DEVICE) # torch.Size([4])
+        s = s.view((1, 4)) # torch.Size([1,4])
         a = agent.get_action(s)
+
         ns, r, done, info = env.step(a.item())
 
-        states.append(s)
-        actions.append(a)
-        rewards.append(r)
+        agent.update(s, a.view(-1,1), r, ns, done)
 
         s = ns
 
@@ -49,12 +46,4 @@ for ep in range(n_eps):
     if ep % print_every == 0:
         print("Episode: {} || Cumulative Reward: {}".format(ep, cum_r))
 
-    states = torch.cat(states, dim = 0)
-    rewards = torch.tensor(rewards)
-
-    actions = torch.stack(actions).squeeze()
-
-    episode = (states, actions, rewards)
-    agent.update_episode(episode)
-
-torch.save(agent.policy.state_dict(), './weights/Cartpole_REINFORCE.pkl')
+torch.save(agent.policy.state_dict(), './weights/Cartpole_A2C.pkl')
