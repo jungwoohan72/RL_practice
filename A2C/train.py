@@ -46,4 +46,4 @@ for ep in range(n_eps):
     if ep % print_every == 0:
         print("Episode: {} || Cumulative Reward: {}".format(ep, cum_r))
 
-torch.save(agent.policy.state_dict(), './weights/Cartpole_A2C.pkl')
+torch.save(agent.policy_net.state_dict(), './weights/Cartpole_A2C.pkl')
