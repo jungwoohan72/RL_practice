@@ -42,7 +42,7 @@ class A2C(nn.Module):
 
         v = self.value_net(state)
 
-        loss = -torch.log(prob + self._eps)*td_error + self._mse(v, td_target*td_error)  # policy loss + value loss / shape: torch.Size([1,1])
+        loss = -torch.log(prob + self._eps)*td_error + self._mse(v, td_target) # policy loss + value loss / shape: torch.Size([1,1])
         loss = loss.mean() # shape: torch.Size([])
 
         self.optimizer.zero_grad()
