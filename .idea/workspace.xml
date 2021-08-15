@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="Search">
-      <change afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-15-dynamic-programming.md" afterDir="false" />
+    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="DP">
+      <change afterPath="$PROJECT_DIR$/../coding_test/DP/p217.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coding_test/DP/p220.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2012-01-29-markup-text-readability.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-10-sort.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-10-sort.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-15-dynamic-programming.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-15-dynamic-programming.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../jungwoohan72.github.io" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../coding_test" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -500,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628958631838</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="DP">
+      <created>1629023613938</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1629023613938</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -527,6 +534,7 @@
     <MESSAGE value="Actor Critic" />
     <MESSAGE value="." />
     <MESSAGE value="Search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search" />
+    <MESSAGE value="DP" />
+    <option name="LAST_COMMIT_MESSAGE" value="DP" />
   </component>
 </project>
