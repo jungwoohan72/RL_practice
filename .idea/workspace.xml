@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="DP">
-      <change afterPath="$PROJECT_DIR$/../coding_test/DP/p217.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../coding_test/DP/p220.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coding_test/DP/p223.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coding_test/DP/p226.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coding_test/DP/p220.py" beforeDir="false" afterPath="$PROJECT_DIR$/../coding_test/DP/p220.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2012-01-11-markup-html-elements-and-formatting.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2012-01-11-markup-html-elements-and-formatting.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-15-dynamic-programming.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-15-dynamic-programming.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../coding_test" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../jungwoohan72.github.io" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -507,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629023613938</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="DP">
+      <created>1629036078447</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1629036078447</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
