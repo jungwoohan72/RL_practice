@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/A3C/A3C.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PPO/PPO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PPO/train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coding_test/Hyundai_practice/GBC_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../coding_test/Hyundai_practice/GBC_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../coding_test" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -184,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
-    </task>
-    <task id="LOCAL-00001" summary="category changed">
-      <created>1627873165465</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1627873165465</updated>
     </task>
     <task id="LOCAL-00002" summary=".">
       <created>1628055684257</created>
@@ -528,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629118276557</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary=".">
+      <created>1629280947371</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1629280947371</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
