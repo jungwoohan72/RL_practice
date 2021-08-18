@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="Hyundai">
+    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="About">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/about.md" afterDir="false" />
     </list>
@@ -182,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
-    </task>
-    <task id="LOCAL-00003" summary=".">
-      <created>1628055885032</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1628055885032</updated>
     </task>
     <task id="LOCAL-00004" summary=".">
       <created>1628056452198</created>
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629297912575</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="About">
+      <created>1629298153702</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1629298153702</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -555,6 +555,7 @@
     <MESSAGE value="DP" />
     <MESSAGE value="." />
     <MESSAGE value="Hyundai" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hyundai" />
+    <MESSAGE value="About" />
+    <option name="LAST_COMMIT_MESSAGE" value="About" />
   </component>
 </project>
