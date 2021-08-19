@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="A3C">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3C/A3C.py" beforeDir="false" afterPath="$PROJECT_DIR$/A3C/A3C.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-10-actor-critic.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-10-actor-critic.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../jungwoohan72.github.io" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -183,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
-    </task>
-    <task id="LOCAL-00010" summary=".">
-      <created>1628155888674</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1628155888674</updated>
     </task>
     <task id="LOCAL-00011" summary=".">
       <created>1628156598355</created>
@@ -527,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629359985859</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="A3C">
+      <created>1629360278328</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1629360278328</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
