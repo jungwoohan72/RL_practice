@@ -5,7 +5,7 @@ import numpy as np
 
 from torch.distributions.categorical import Categorical
 from MLP import MLP as MLP
-from A2C import A2C as A2C
+from vanilla_AC import A2C as A2C
 from REINFORCE import REINFORCE as REINFORCE
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
