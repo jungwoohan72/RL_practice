@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="About">
+    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="A3C">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A3C/A3C.py" beforeDir="false" afterPath="$PROJECT_DIR$/A3C/A3C.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-10-actor-critic.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-10-actor-critic.md" afterDir="false" />
@@ -22,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../jungwoohan72.github.io" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -183,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
-    </task>
-    <task id="LOCAL-00009" summary=".">
-      <created>1628154424393</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1628154424393</updated>
     </task>
     <task id="LOCAL-00010" summary=".">
       <created>1628155888674</created>
@@ -527,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629299534385</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="A3C">
+      <created>1629359985859</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1629359985859</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -557,6 +557,7 @@
     <MESSAGE value="." />
     <MESSAGE value="Hyundai" />
     <MESSAGE value="About" />
-    <option name="LAST_COMMIT_MESSAGE" value="About" />
+    <MESSAGE value="A3C" />
+    <option name="LAST_COMMIT_MESSAGE" value="A3C" />
   </component>
 </project>
