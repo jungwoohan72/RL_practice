@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="AC">
+    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="Multi-robot dynamic task allocation for exploration and destruction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2010-06-02-post-video-youtube.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-22-multi-robot-exploration-and-destruction.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2010-09-10-post-twitter-embeds.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-19-ppo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-19-ppo.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-19-ppo.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
-    </task>
-    <task id="LOCAL-00013" summary=".">
-      <created>1628221502021</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1628221502021</updated>
     </task>
     <task id="LOCAL-00014" summary=".">
       <created>1628230753581</created>
@@ -527,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629362876335</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Multi-robot dynamic task allocation for exploration and destruction">
+      <created>1629629364781</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1629629364781</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -559,6 +558,7 @@
     <MESSAGE value="About" />
     <MESSAGE value="A3C" />
     <MESSAGE value="AC" />
-    <option name="LAST_COMMIT_MESSAGE" value="AC" />
+    <MESSAGE value="Multi-robot dynamic task allocation for exploration and destruction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multi-robot dynamic task allocation for exploration and destruction" />
   </component>
 </project>
