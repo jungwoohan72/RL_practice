@@ -3,15 +3,31 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="PPO">
+      <change afterPath="$PROJECT_DIR$/../Operation_Research/.idea/Operation_Research.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VRP_DRL_MHA/.idea/VRP_DRL_MHA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RL_practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RL_practice.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A3C/A3C.py" beforeDir="false" afterPath="$PROJECT_DIR$/A3C/A3C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DQN/train_DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/train_DQN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PPO/PPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/PPO/PPO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VRP_DRL_MHA/TensorFlow2/Pkl/VRP20_train.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../VRP_DRL_MHA/TensorFlow2/Pkl/VRP20_train.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../coding_test/.idea/coding_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../coding_test/.idea/coding_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/.idea/jungwoohan72.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/.idea/jungwoohan72.github.io.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -22,6 +38,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -41,8 +58,14 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/A2C" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../A3C_RNN.ipynb" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -59,6 +82,11 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.PPO">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="A3C" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL_practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,7 +171,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="train_DQN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL_practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,11 +179,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/A2C" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DQN" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/A2C/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DQN/train_DQN.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,10 +195,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.PPO" />
+        <item itemvalue="Python.train_DQN" />
         <item itemvalue="Python.A3C" />
         <item itemvalue="Python.p201" />
         <item itemvalue="Python.p197" />
-        <item itemvalue="Python.test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +210,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
+      <workItem from="1629782385796" duration="8126000" />
     </task>
     <task id="LOCAL-00016" summary=".">
       <created>1628231078649</created>
@@ -531,6 +560,9 @@
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
     <option name="startingDirectory" value="C:\Users\Jungwoo\PycharmProjects\Operation_Research" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

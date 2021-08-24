@@ -5,6 +5,10 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torch.distributions import Categorical
 
+import wandb
+import json
+import os; os.environ['WANDB_NOTEBOOK_NAME'] = 'JWHan'
+
 # Hyperparameters
 learning_rate = 0.0005
 gamma = 0.98
@@ -12,7 +16,6 @@ lmbda = 0.95
 eps_clip = 0.1
 K_epoch = 3
 T_horizon = 20
-
 
 class PPO(nn.Module):
     def __init__(self):
@@ -91,10 +94,15 @@ def main():
     model = PPO()
     score = 0.0
     print_interval = 20
+    n_eps = 10000
+    avg_score = 0.0
 
-    for n_epi in range(10000):
+    wandb.init(project='ppo-cartpole')
+
+    for n_epi in range(n_eps):
         s = env.reset()
         done = False
+        score = 0.0
         while not done:
             for t in range(T_horizon):
                 prob = model.pi(torch.from_numpy(s).float())
@@ -106,16 +114,23 @@ def main():
                 s = s_prime
 
                 score += r
+                avg_score += r
                 if done:
                     break
 
             model.train_net()
 
+        log_dict = dict(score = score)
+        wandb.log(log_dict)
+
         if n_epi % print_interval == 0 and n_epi != 0:
-            print("# of episode :{}, avg score : {:.1f}".format(n_epi, score / print_interval))
-            score = 0.0
+            print("# of episode :{}, avg score : {:.1f}".format(n_epi, avg_score / print_interval))
+            avg_score = 0.0
 
     env.close()
+
+    torch.save(model.state_dict(), join(wandb.run.dir, 'model.pt'))
+    wandb.join()
 
 
 if __name__ == '__main__':

@@ -121,6 +121,7 @@ if __name__ == '__main__':
 
     processes = []
     print("Available CPU Count:", n_train_processes)
+
     for rank in range(n_train_processes + 1):  # + 1 for test process
         if rank == 0:
             p = mp.Process(target=test, args=(global_model,))

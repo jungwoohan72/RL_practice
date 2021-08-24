@@ -18,6 +18,8 @@ from vanilla_DQN import DQN
 from vanilla_CNN import CNN
 from ReplayBuffer import ReplayBuffer
 
+import wandb
+
 env = gym.make('PongDeterministic-v4')
 
 # State and action space check
@@ -37,14 +39,14 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(DEVICE)
 PATH = './weights/Pong_Deterministic/Pong_DQN_'
 
-SAVE_MODELS = True  # Save models to file so you can test later
+SAVE_MODELS = False  # Save models to file so you can test later
 MODEL_PATH = './RL_practice/DQN/weights/'  # Models path for saving or loading
 SAVE_MODEL_INTERVAL = 30  # Save models at every X epoch
 TRAIN_MODEL = True  # Train model while playing (Make it False when testing a model)
 TARGET_UPDATE_INTERVAL = 10
 TRAIN_FLAG = True
 
-LOAD_MODEL_FROM_FILE = True  # Load model from file
+LOAD_MODEL_FROM_FILE = False  # Load model from file
 LOAD_FILE_EPISODE = 510  # Load Xth episode from file
 
 BATCH_SIZE = 64  # Minibatch size that select randomly from mem for train nets
@@ -73,6 +75,13 @@ qnet_target.load_state_dict(qnet.state_dict())
 agent = DQN(4,env.action_space.n,qnet=qnet, qnet_target=qnet_target, lr=ALPHA, gamma=GAMMA, epsilon = 1.0).to(DEVICE) # 4 sequential channel input
 
 print_every = 1
+
+config = dict(
+    learning_rate = ALPHA,
+    gamma = GAMMA
+)
+wandb.init(project='pong-DQN',
+        config = config)
 
 if LOAD_MODEL_FROM_FILE:
     agent.qnet.load_state_dict(torch.load(PATH+str(LOAD_FILE_EPISODE)+".pkl"))
@@ -149,3 +158,18 @@ for n_epi in range(startEpisode, MAX_EPISODE):
     if n_epi % print_every == 0:
         msg = (n_epi, cum_r, epsilon, agent.loss, agent.random_action, agent.greedy_action)
         print("Episode : {:4.0f} | Cumulative Reward : {:4.0f} | Epsilon: {:.3f} | Loss: {:.6f} | Random: {} | Greedy: {}".format(*msg))
+
+    log_dict = dict()
+    log_dict['cum_return'] = cum_r
+    log_dict['epsilon'] = epsilon
+    wandb.log(log_dict)
+
+# Save model and experiment configuration
+json_val = json.dumps(config)
+with open(join(wandb.run.dir, 'config.json'), 'w') as f:
+    json.dump(json_val, f)
+
+torch.save(agent.qnet.state_dict(), join(wandb.run.dir, 'model.pt'))
+
+# close wandb session
+wandb.join()
