@@ -9,17 +9,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="PPO">
-      <change afterPath="$PROJECT_DIR$/../Operation_Research/.idea/Operation_Research.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VRP_DRL_MHA/.idea/VRP_DRL_MHA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RL_practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RL_practice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3C/A3C.py" beforeDir="false" afterPath="$PROJECT_DIR$/A3C/A3C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN/train_DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/train_DQN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPO/PPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/PPO/PPO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VRP_DRL_MHA/TensorFlow2/Pkl/VRP20_train.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../VRP_DRL_MHA/TensorFlow2/Pkl/VRP20_train.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coding_test/.idea/coding_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../coding_test/.idea/coding_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/.idea/jungwoohan72.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/.idea/jungwoohan72.github.io.iml" afterDir="false" />
+    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-19-ppo.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-19-ppo.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../jungwoohan72.github.io" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -210,14 +201,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
-      <workItem from="1629782385796" duration="8126000" />
-    </task>
-    <task id="LOCAL-00016" summary=".">
-      <created>1628231078649</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1628231078649</updated>
+      <workItem from="1629782385796" duration="8472000" />
     </task>
     <task id="LOCAL-00017" summary=".">
       <created>1628231198176</created>
@@ -555,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629779864442</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary=".">
+      <created>1629792472491</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1629792472491</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -585,13 +576,13 @@
     <MESSAGE value="Actor Critic" />
     <MESSAGE value="Search" />
     <MESSAGE value="DP" />
-    <MESSAGE value="." />
     <MESSAGE value="Hyundai" />
     <MESSAGE value="About" />
     <MESSAGE value="A3C" />
     <MESSAGE value="AC" />
     <MESSAGE value="Multi-robot dynamic task allocation for exploration and destruction" />
     <MESSAGE value="PPO" />
-    <option name="LAST_COMMIT_MESSAGE" value="PPO" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
