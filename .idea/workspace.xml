@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="Paper update">
+      <change afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-30-multi-agent-graph-attention-attention-communication-and-teaming.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2009-10-05-edge-case-very-long-title.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2009-10-05-edge-case-very-long-title.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2010-01-07-post-modified.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
-    </task>
-    <task id="LOCAL-00017" summary=".">
-      <created>1628231198176</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1628231198176</updated>
     </task>
     <task id="LOCAL-00018" summary=".">
       <created>1628467217465</created>
@@ -526,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629962333322</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Paper update">
+      <created>1630284666217</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1630284666217</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
