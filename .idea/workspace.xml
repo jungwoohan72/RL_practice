@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="PPO">
+    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="Paper update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2010-02-05-post-quote.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2010-02-05-post-quote.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2009-10-05-edge-case-very-long-title.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2009-10-05-edge-case-very-long-title.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
-    </task>
-    <task id="LOCAL-00016" summary=".">
-      <created>1628231078649</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1628231078649</updated>
     </task>
     <task id="LOCAL-00017" summary=".">
       <created>1628231198176</created>
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629779864442</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Paper update">
+      <created>1629962333322</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1629962333322</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -560,6 +560,7 @@
     <MESSAGE value="AC" />
     <MESSAGE value="Multi-robot dynamic task allocation for exploration and destruction" />
     <MESSAGE value="PPO" />
-    <option name="LAST_COMMIT_MESSAGE" value="PPO" />
+    <MESSAGE value="Paper update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Paper update" />
   </component>
 </project>
