@@ -9,11 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2009-10-05-edge-case-title-should-not-overflow-the-content-area.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-31-tips.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-30-multi-agent-graph-attention-attention-communication-and-teaming.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-30-multi-agent-graph-attention-attention-communication-and-teaming.md" afterDir="false" />
-    </list>
+    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,27 +200,6 @@
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
       <workItem from="1629782385796" duration="8472000" />
-    </task>
-    <task id="LOCAL-00018" summary=".">
-      <created>1628467217465</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1628467217465</updated>
-    </task>
-    <task id="LOCAL-00019" summary=".">
-      <created>1628467261131</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1628467261131</updated>
-    </task>
-    <task id="LOCAL-00020" summary="REINFORCE implementation">
-      <created>1628515246673</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1628515246673</updated>
     </task>
     <task id="LOCAL-00021" summary=".">
       <created>1628515262141</created>
@@ -548,7 +523,28 @@
       <option name="project" value="LOCAL" />
       <updated>1630394999980</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Conda tips">
+      <created>1630398010352</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1630398010352</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Multi-agent attention">
+      <created>1630398027316</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1630398027316</updated>
+    </task>
+    <task id="LOCAL-00069" summary="tips">
+      <created>1630398204810</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1630398204810</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -586,6 +582,9 @@
     <MESSAGE value="PPO" />
     <MESSAGE value="." />
     <MESSAGE value="Multi-agent" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multi-agent" />
+    <MESSAGE value="Conda tips" />
+    <MESSAGE value="Multi-agent attention" />
+    <MESSAGE value="tips" />
+    <option name="LAST_COMMIT_MESSAGE" value="tips" />
   </component>
 </project>
