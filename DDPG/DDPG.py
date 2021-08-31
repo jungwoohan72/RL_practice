@@ -103,6 +103,7 @@ def soft_update(net, net_target):
 
 def main():
     env = gym.make('Pendulum-v0')
+
     memory = ReplayBuffer()
 
     q, q_target = QNet(), QNet()
