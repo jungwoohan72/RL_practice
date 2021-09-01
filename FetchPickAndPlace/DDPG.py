@@ -8,7 +8,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 class DDPG(nn.Module):
-    def __init__(self, q_net, mu_net, observation_channel, action_channel, lr_mu, lr_q, gamma, device):
+    def __init__(self, q_net, mu_net, observation_dim, action_dim, lr_mu, lr_q, gamma, device):
         super(DDPG, self).__init__()
         self.qnet = q_net
         self.munet = mu_net

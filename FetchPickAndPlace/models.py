@@ -6,9 +6,9 @@ import torch.nn.functional as F
 # 하지만 continuous space의 deterministic action은 그게 불가능하다.
 
 class Qnet(nn.Module):
-    def __init__(self, observation_channel):
+    def __init__(self, observation_dim):
         super(Qnet, self).__init__()
-        self.fc_s = nn.Linear(observation_channel, 64)
+        self.fc_s = nn.Linear(dim, 64)
         self.fc_a = nn.Linear(1, 64)
         self.fc_q = nn.Linear(128, 32)
         self.fc_out = nn.Linear(32, 1)
@@ -22,3 +22,14 @@ class Qnet(nn.Module):
         return q
 
 class mu_net(nn.Module):
+    def __init__(self, observation_dim):
+        super(mu_net, self).__init__()
+        self.fc1 = nn.Linear(observation_dim, 128)
+        self.fc2 = nn.Linear(128, 64)
+        self.fc_mu = nn.Linear(64, 1)
+
+    def forward(self, x):
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        mu = torch.tanh(self.fc_mu(x))
+        return mu
