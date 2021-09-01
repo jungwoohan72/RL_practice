@@ -104,6 +104,10 @@ def soft_update(net, net_target):
 def main():
     env = gym.make('Pendulum-v0')
 
+    s_dim = env.observation_space.shape[0]
+    a_dim = env.action_space.shape[0]
+    print("State dim: ", s_dim, "Action dim: ", a_dim)
+
     memory = ReplayBuffer()
 
     q, q_target = QNet(), QNet()
