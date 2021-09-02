@@ -1,0 +1,11 @@
+Target Network Updated!
+Episode :    0 | Cumulative Reward :  -21 | Epsilon: 1.000 | Loss: 0.000000 | Random: 824 | Greedy: 0
+Episode :    1 | Cumulative Reward :  -21 | Epsilon: 0.990 | Loss: 0.000000 | Random: 872 | Greedy: 8
+Episode :    2 | Cumulative Reward :  -21 | Epsilon: 0.980 | Loss: 0.000000 | Random: 834 | Greedy: 18
+Episode :    3 | Cumulative Reward :  -21 | Epsilon: 0.970 | Loss: 0.000000 | Random: 742 | Greedy: 22
+Traceback (most recent call last):
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DQN/train_DQN.py", line 123, in <module>
+    next_state = preprocess_image(next_state, (20, env.observation_space.shape[0], 0, env.observation_space.shape[1]), 84, 64)
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DQN/Preprocessing.py", line 21, in preprocess_image
+    image = cv2.resize(image, (target_height, target_width), interpolation = cv2.INTER_AREA)
+KeyboardInterrupt

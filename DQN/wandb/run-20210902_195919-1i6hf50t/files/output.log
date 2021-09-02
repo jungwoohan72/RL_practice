@@ -1,0 +1,15 @@
+Target Network Updated!
+Episode :    0 | Cumulative Reward :  -20 | Epsilon: 1.000 | Loss: 0.000000 | Random: 982 | Greedy: 0
+Episode :    1 | Cumulative Reward :  -21 | Epsilon: 0.990 | Loss: 0.000000 | Random: 816 | Greedy: 8
+Episode :    2 | Cumulative Reward :  -21 | Epsilon: 0.980 | Loss: 0.000000 | Random: 892 | Greedy: 11
+Episode :    3 | Cumulative Reward :  -19 | Epsilon: 0.970 | Loss: 0.000000 | Random: 1067 | Greedy: 24
+Traceback (most recent call last):
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DQN/train_DQN.py", line 121, in <module>
+    next_state, r, done, info = env.step(a)
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/gym/envs/atari/atari_env.py", line 120, in step
+    reward += self.ale.act(action)
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/atari_py/ale_python_interface.py", line 152, in act
+    return ale_lib.act(self.obj, int(action))
+KeyboardInterrupt

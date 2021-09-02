@@ -3,8 +3,9 @@ import collections
 import random
 
 class ReplayBuffer():
-    def __init__(self, buffer_limit = 50000):
+    def __init__(self, buffer_limit = 50000, device = 'cpu'):
         self.buffer = collections.deque(maxlen=buffer_limit)
+        self.device = device
 
     def put(self, transition):
         self.buffer.append(transition)
@@ -16,15 +17,18 @@ class ReplayBuffer():
         for transition in mini_batch:
             s, a, r, s_prime, done = transition
             s_lst.append(s)
-            a_lst.append([a])
-            r_lst.append([r])
+            a_lst.append(a)
+            r_lst.append(r)
             s_prime_lst.append(s_prime)
-            done_mask = 0.0 if done else 1.0
-            done_mask_lst.append([done_mask])
+            done_mask_lst.append(done)
 
-        return torch.tensor(s_lst, dtype=torch.float), torch.tensor(a_lst, dtype=torch.float), \
-               torch.tensor(r_lst, dtype=torch.float), torch.tensor(s_prime_lst, dtype=torch.float), \
-               torch.tensor(done_mask_lst, dtype=torch.float)
+        states = torch.cat(s_lst, dim=0).float().to(self.device)
+        actions = torch.cat(a_lst, dim=0).to(self.device)
+        rewards = torch.cat(r_lst, dim=0).float().to(self.device)
+        next_states = torch.cat(s_prime_lst, dim=0).float().to(self.device)
+        dones = torch.cat(done_mask_lst, dim=0).float().to(self.device)
+
+        return states, actions, rewards, next_states, dones
 
     def size(self):
         return len(self.buffer)

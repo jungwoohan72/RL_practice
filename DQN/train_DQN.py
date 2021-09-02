@@ -118,6 +118,7 @@ for n_epi in range(startEpisode, MAX_EPISODE):
             env.render()
 
         a = agent.get_action(s, DEVICE)
+
         next_state, r, done, info = env.step(a)
         next_state = preprocess_image(next_state, (20, env.observation_space.shape[0], 0, env.observation_space.shape[1]), 84, 64)
         next_state = torch.from_numpy(next_state).float().to(DEVICE)

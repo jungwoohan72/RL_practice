@@ -1,0 +1,18 @@
+torch.Size([1, 4, 84, 64])
+Target Network Updated!
+Episode :    0 | Cumulative Reward :  -20 | Epsilon: 1.000 | Loss: 0.000000 | Random: 1001 | Greedy: 0
+torch.Size([1, 4, 84, 64])
+Traceback (most recent call last):
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DQN/train_DQN.py", line 121, in <module>
+    a = agent.get_action(s, DEVICE)
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DQN/vanilla_DQN.py", line 30, in get_action
+    action = np.random.choice(range(self.action_dim)) # choose random action which has dimension of self.action_dim
+  File "mtrand.pyx", line 956, in numpy.random.mtrand.RandomState.choice
+  File "mtrand.pyx", line 747, in numpy.random.mtrand.RandomState.randint
+  File "_bounded_integers.pyx", line 1234, in numpy.random._bounded_integers._rand_int64
+  File "<__array_function__ internals>", line 5, in prod
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 3030, in prod
+    return _wrapreduction(a, np.multiply, 'prod', axis, dtype, out,
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 87, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+KeyboardInterrupt

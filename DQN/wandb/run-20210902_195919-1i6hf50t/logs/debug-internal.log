@@ -1,0 +1,169 @@
+2021-09-02 19:59:19,758 INFO    MainThread:7674 [internal.py:wandb_internal():86] W&B internal server running at pid: 7674, started at: 2021-09-02 19:59:19.758450
+2021-09-02 19:59:19,760 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: check_version
+2021-09-02 19:59:19,760 INFO    WriterThread:7674 [datastore.py:open_for_write():77] open: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/run-1i6hf50t.wandb
+2021-09-02 19:59:19,761 DEBUG   SenderThread:7674 [sender.py:send():182] send: header
+2021-09-02 19:59:19,761 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: check_version
+2021-09-02 19:59:19,931 DEBUG   SenderThread:7674 [sender.py:send():182] send: run
+2021-09-02 19:59:20,301 INFO    SenderThread:7674 [dir_watcher.py:__init__():168] watching files in: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files
+2021-09-02 19:59:20,302 INFO    SenderThread:7674 [sender.py:_start_run_threads():740] run started: 1i6hf50t with start time 1630580359
+2021-09-02 19:59:20,302 DEBUG   SenderThread:7674 [sender.py:send():182] send: summary
+2021-09-02 19:59:20,303 INFO    SenderThread:7674 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-02 19:59:20,304 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: run_start
+2021-09-02 19:59:20,310 DEBUG   HandlerThread:7674 [meta.py:__init__():39] meta init
+2021-09-02 19:59:20,310 DEBUG   HandlerThread:7674 [meta.py:__init__():53] meta init done
+2021-09-02 19:59:20,310 DEBUG   HandlerThread:7674 [meta.py:probe():210] probe
+2021-09-02 19:59:20,316 DEBUG   HandlerThread:7674 [meta.py:_setup_git():200] setup git
+2021-09-02 19:59:20,322 DEBUG   HandlerThread:7674 [meta.py:_setup_git():207] setup git done
+2021-09-02 19:59:20,322 DEBUG   HandlerThread:7674 [meta.py:_save_pip():57] save pip
+2021-09-02 19:59:20,323 DEBUG   HandlerThread:7674 [meta.py:_save_pip():71] save pip done
+2021-09-02 19:59:20,323 DEBUG   HandlerThread:7674 [meta.py:_save_conda():78] save conda
+2021-09-02 19:59:21,302 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_created():216] file/dir created: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/requirements.txt
+2021-09-02 19:59:21,302 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_created():216] file/dir created: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/wandb-summary.json
+2021-09-02 19:59:21,302 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_created():216] file/dir created: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/conda-environment.yaml
+2021-09-02 19:59:21,522 DEBUG   HandlerThread:7674 [meta.py:_save_conda():86] save conda done
+2021-09-02 19:59:21,522 DEBUG   HandlerThread:7674 [meta.py:probe():252] probe done
+2021-09-02 19:59:21,524 DEBUG   SenderThread:7674 [sender.py:send():182] send: files
+2021-09-02 19:59:21,524 INFO    SenderThread:7674 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-09-02 19:59:21,528 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: stop_status
+2021-09-02 19:59:21,528 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: stop_status
+2021-09-02 19:59:22,301 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/conda-environment.yaml
+2021-09-02 19:59:22,302 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_created():216] file/dir created: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/output.log
+2021-09-02 19:59:22,302 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_created():216] file/dir created: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/wandb-metadata.json
+2021-09-02 19:59:22,319 INFO    Thread-11 :7674 [upload_job.py:push():137] Uploaded file /tmp/tmpldbbku2nwandb/3aa9zene-wandb-metadata.json
+2021-09-02 19:59:23,001 DEBUG   SenderThread:7674 [sender.py:send():182] send: history
+2021-09-02 19:59:23,001 DEBUG   SenderThread:7674 [sender.py:send():182] send: summary
+2021-09-02 19:59:23,001 INFO    SenderThread:7674 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-02 19:59:23,302 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/wandb-summary.json
+2021-09-02 19:59:24,060 DEBUG   SenderThread:7674 [sender.py:send():182] send: history
+2021-09-02 19:59:24,060 DEBUG   SenderThread:7674 [sender.py:send():182] send: summary
+2021-09-02 19:59:24,061 INFO    SenderThread:7674 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-02 19:59:24,302 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/output.log
+2021-09-02 19:59:24,302 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/wandb-summary.json
+2021-09-02 19:59:25,214 DEBUG   SenderThread:7674 [sender.py:send():182] send: history
+2021-09-02 19:59:25,214 DEBUG   SenderThread:7674 [sender.py:send():182] send: summary
+2021-09-02 19:59:25,215 INFO    SenderThread:7674 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-02 19:59:25,302 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/wandb-summary.json
+2021-09-02 19:59:26,302 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/output.log
+2021-09-02 19:59:26,608 DEBUG   SenderThread:7674 [sender.py:send():182] send: history
+2021-09-02 19:59:26,608 DEBUG   SenderThread:7674 [sender.py:send():182] send: summary
+2021-09-02 19:59:26,608 INFO    SenderThread:7674 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-02 19:59:26,626 WARNING MainThread:7674 [internal.py:wandb_internal():145] Internal process interrupt: 1
+2021-09-02 19:59:27,303 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/wandb-summary.json
+2021-09-02 19:59:28,304 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/output.log
+2021-09-02 19:59:29,051 DEBUG   SenderThread:7674 [sender.py:send():182] send: telemetry
+2021-09-02 19:59:29,051 DEBUG   SenderThread:7674 [sender.py:send():182] send: exit
+2021-09-02 19:59:29,051 INFO    SenderThread:7674 [sender.py:send_exit():291] handling exit code: 255
+2021-09-02 19:59:29,052 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:29,052 INFO    SenderThread:7674 [sender.py:send_exit():293] handling runtime: 8
+2021-09-02 19:59:29,054 INFO    SenderThread:7674 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-02 19:59:29,054 INFO    SenderThread:7674 [sender.py:send_exit():303] send defer
+2021-09-02 19:59:29,055 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:29,056 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: defer
+2021-09-02 19:59:29,056 INFO    HandlerThread:7674 [handler.py:handle_request_defer():145] handle defer: 0
+2021-09-02 19:59:29,057 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: defer
+2021-09-02 19:59:29,057 INFO    SenderThread:7674 [sender.py:send_request_defer():312] handle sender defer: 0
+2021-09-02 19:59:29,057 INFO    SenderThread:7674 [sender.py:transition_state():316] send defer: 1
+2021-09-02 19:59:29,058 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: defer
+2021-09-02 19:59:29,058 INFO    HandlerThread:7674 [handler.py:handle_request_defer():145] handle defer: 1
+2021-09-02 19:59:29,123 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: defer
+2021-09-02 19:59:29,124 INFO    SenderThread:7674 [sender.py:send_request_defer():312] handle sender defer: 1
+2021-09-02 19:59:29,124 INFO    SenderThread:7674 [sender.py:transition_state():316] send defer: 2
+2021-09-02 19:59:29,124 DEBUG   SenderThread:7674 [sender.py:send():182] send: stats
+2021-09-02 19:59:29,124 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: defer
+2021-09-02 19:59:29,124 INFO    HandlerThread:7674 [handler.py:handle_request_defer():145] handle defer: 2
+2021-09-02 19:59:29,125 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: defer
+2021-09-02 19:59:29,125 INFO    SenderThread:7674 [sender.py:send_request_defer():312] handle sender defer: 2
+2021-09-02 19:59:29,125 INFO    SenderThread:7674 [sender.py:transition_state():316] send defer: 3
+2021-09-02 19:59:29,125 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: defer
+2021-09-02 19:59:29,125 INFO    HandlerThread:7674 [handler.py:handle_request_defer():145] handle defer: 3
+2021-09-02 19:59:29,125 DEBUG   SenderThread:7674 [sender.py:send():182] send: summary
+2021-09-02 19:59:29,126 INFO    SenderThread:7674 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-02 19:59:29,126 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: defer
+2021-09-02 19:59:29,126 INFO    SenderThread:7674 [sender.py:send_request_defer():312] handle sender defer: 3
+2021-09-02 19:59:29,126 INFO    SenderThread:7674 [sender.py:transition_state():316] send defer: 4
+2021-09-02 19:59:29,126 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: defer
+2021-09-02 19:59:29,126 INFO    HandlerThread:7674 [handler.py:handle_request_defer():145] handle defer: 4
+2021-09-02 19:59:29,126 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: defer
+2021-09-02 19:59:29,126 INFO    SenderThread:7674 [sender.py:send_request_defer():312] handle sender defer: 4
+2021-09-02 19:59:29,158 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:29,304 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/output.log
+2021-09-02 19:59:29,304 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/wandb-summary.json
+2021-09-02 19:59:29,466 INFO    SenderThread:7674 [sender.py:transition_state():316] send defer: 5
+2021-09-02 19:59:29,467 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:29,468 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: defer
+2021-09-02 19:59:29,468 INFO    HandlerThread:7674 [handler.py:handle_request_defer():145] handle defer: 5
+2021-09-02 19:59:29,469 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: defer
+2021-09-02 19:59:29,469 INFO    SenderThread:7674 [sender.py:send_request_defer():312] handle sender defer: 5
+2021-09-02 19:59:29,469 INFO    SenderThread:7674 [dir_watcher.py:finish():282] shutting down directory watcher
+2021-09-02 19:59:29,570 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:30,305 INFO    Thread-8  :7674 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/config.yaml
+2021-09-02 19:59:30,306 INFO    SenderThread:7674 [dir_watcher.py:finish():312] scan: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files
+2021-09-02 19:59:30,307 INFO    SenderThread:7674 [dir_watcher.py:finish():318] scan save: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/config.yaml config.yaml
+2021-09-02 19:59:30,307 INFO    SenderThread:7674 [dir_watcher.py:finish():318] scan save: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/output.log output.log
+2021-09-02 19:59:30,315 INFO    SenderThread:7674 [dir_watcher.py:finish():318] scan save: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/wandb-summary.json wandb-summary.json
+2021-09-02 19:59:30,315 INFO    SenderThread:7674 [dir_watcher.py:finish():318] scan save: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/conda-environment.yaml conda-environment.yaml
+2021-09-02 19:59:30,315 INFO    SenderThread:7674 [dir_watcher.py:finish():318] scan save: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/requirements.txt requirements.txt
+2021-09-02 19:59:30,317 INFO    SenderThread:7674 [dir_watcher.py:finish():318] scan save: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/wandb-metadata.json wandb-metadata.json
+2021-09-02 19:59:30,318 INFO    SenderThread:7674 [sender.py:transition_state():316] send defer: 6
+2021-09-02 19:59:30,318 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:30,325 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: defer
+2021-09-02 19:59:30,325 INFO    HandlerThread:7674 [handler.py:handle_request_defer():145] handle defer: 6
+2021-09-02 19:59:30,325 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: defer
+2021-09-02 19:59:30,325 INFO    SenderThread:7674 [sender.py:send_request_defer():312] handle sender defer: 6
+2021-09-02 19:59:30,325 INFO    SenderThread:7674 [file_pusher.py:finish():177] shutting down file pusher
+2021-09-02 19:59:30,419 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:30,419 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:30,521 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:30,522 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:30,625 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:30,626 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:30,729 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:30,729 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:30,831 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:30,832 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:30,935 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:30,935 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:31,036 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:31,037 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:31,117 INFO    Thread-16 :7674 [upload_job.py:push():137] Uploaded file /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/requirements.txt
+2021-09-02 19:59:31,139 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:31,139 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:31,155 INFO    Thread-12 :7674 [upload_job.py:push():137] Uploaded file /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/config.yaml
+2021-09-02 19:59:31,166 INFO    Thread-13 :7674 [upload_job.py:push():137] Uploaded file /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/output.log
+2021-09-02 19:59:31,174 INFO    Thread-14 :7674 [upload_job.py:push():137] Uploaded file /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/wandb-summary.json
+2021-09-02 19:59:31,189 INFO    Thread-15 :7674 [upload_job.py:push():137] Uploaded file /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/files/conda-environment.yaml
+2021-09-02 19:59:31,241 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:31,242 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:31,344 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:31,345 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:31,390 INFO    Thread-7  :7674 [sender.py:transition_state():316] send defer: 7
+2021-09-02 19:59:31,391 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: defer
+2021-09-02 19:59:31,392 INFO    HandlerThread:7674 [handler.py:handle_request_defer():145] handle defer: 7
+2021-09-02 19:59:31,392 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: defer
+2021-09-02 19:59:31,392 INFO    SenderThread:7674 [sender.py:send_request_defer():312] handle sender defer: 7
+2021-09-02 19:59:31,447 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:31,634 INFO    SenderThread:7674 [sender.py:transition_state():316] send defer: 8
+2021-09-02 19:59:31,635 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:31,636 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: defer
+2021-09-02 19:59:31,636 INFO    HandlerThread:7674 [handler.py:handle_request_defer():145] handle defer: 8
+2021-09-02 19:59:31,637 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: defer
+2021-09-02 19:59:31,637 INFO    SenderThread:7674 [sender.py:send_request_defer():312] handle sender defer: 8
+2021-09-02 19:59:31,637 INFO    SenderThread:7674 [sender.py:transition_state():316] send defer: 9
+2021-09-02 19:59:31,639 DEBUG   SenderThread:7674 [sender.py:send():182] send: final
+2021-09-02 19:59:31,640 DEBUG   SenderThread:7674 [sender.py:send():182] send: footer
+2021-09-02 19:59:31,640 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: defer
+2021-09-02 19:59:31,640 INFO    HandlerThread:7674 [handler.py:handle_request_defer():145] handle defer: 9
+2021-09-02 19:59:31,641 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: defer
+2021-09-02 19:59:31,641 INFO    SenderThread:7674 [sender.py:send_request_defer():312] handle sender defer: 9
+2021-09-02 19:59:31,738 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: poll_exit
+2021-09-02 19:59:31,738 DEBUG   SenderThread:7674 [sender.py:send_request():196] send_request: poll_exit
+2021-09-02 19:59:31,738 INFO    SenderThread:7674 [file_pusher.py:join():182] waiting for file pusher
+2021-09-02 19:59:31,739 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: get_summary
+2021-09-02 19:59:31,739 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: sampled_history
+2021-09-02 19:59:31,740 DEBUG   HandlerThread:7674 [handler.py:handle_request():128] handle_request: shutdown
+2021-09-02 19:59:31,740 INFO    HandlerThread:7674 [handler.py:finish():677] shutting down handler
+2021-09-02 19:59:32,641 INFO    WriterThread:7674 [datastore.py:close():281] close: /home/jungwoo/catkin_ws/src/RL_practice/DQN/wandb/run-20210902_195919-1i6hf50t/run-1i6hf50t.wandb
+2021-09-02 19:59:32,738 INFO    SenderThread:7674 [sender.py:finish():979] shutting down sender
+2021-09-02 19:59:32,738 INFO    SenderThread:7674 [file_pusher.py:finish():177] shutting down file pusher
+2021-09-02 19:59:32,739 INFO    SenderThread:7674 [file_pusher.py:join():182] waiting for file pusher
+2021-09-02 19:59:32,742 INFO    MainThread:7674 [internal.py:handle_exit():76] Internal process exited
