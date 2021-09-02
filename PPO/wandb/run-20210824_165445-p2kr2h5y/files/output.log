@@ -1,0 +1,40 @@
+# of episode :20, avg score : 37.5
+# of episode :40, avg score : 58.3
+# of episode :60, avg score : 57.2
+# of episode :80, avg score : 107.8
+# of episode :100, avg score : 131.4
+# of episode :120, avg score : 150.4
+# of episode :140, avg score : 198.2
+# of episode :160, avg score : 259.4
+# of episode :180, avg score : 231.4
+# of episode :200, avg score : 340.1
+# of episode :220, avg score : 342.3
+# of episode :240, avg score : 296.7
+# of episode :260, avg score : 314.9
+# of episode :280, avg score : 454.8
+# of episode :300, avg score : 435.2
+# of episode :320, avg score : 426.1
+# of episode :340, avg score : 486.4
+# of episode :360, avg score : 463.4
+# of episode :380, avg score : 493.1
+# of episode :400, avg score : 459.1
+# of episode :420, avg score : 436.8
+# of episode :440, avg score : 407.9
+# of episode :460, avg score : 381.7
+# of episode :480, avg score : 319.5
+# of episode :500, avg score : 467.6
+# of episode :520, avg score : 455.2
+Traceback (most recent call last):
+  File "/home/jungwoo/catkin_ws/src/RL_practice/PPO/PPO.py", line 134, in <module>
+    main()
+  File "/home/jungwoo/catkin_ws/src/RL_practice/PPO/PPO.py", line 106, in main
+    prob = model.pi(torch.from_numpy(s).float())
+  File "/home/jungwoo/catkin_ws/src/RL_practice/PPO/PPO.py", line 32, in pi
+    x = self.fc_pi(x)
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 96, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/torch/nn/functional.py", line 1847, in linear
+    return torch._C._nn.linear(input, weight, bias)
+KeyboardInterrupt

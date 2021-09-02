@@ -1,0 +1,24 @@
+
+Episode :  511 | Cumulative Reward :  -19 | Epsilon: 0.010 | Loss: 0.000000 | Random: 11 | Greedy: 1447
+Episode :  512 | Cumulative Reward :  -16 | Epsilon: 0.010 | Loss: 0.000000 | Random: 12 | Greedy: 1682
+Episode :  513 | Cumulative Reward :  -16 | Epsilon: 0.010 | Loss: 0.000000 | Random: 18 | Greedy: 1674
+Episode :  514 | Cumulative Reward :  -18 | Epsilon: 0.010 | Loss: 0.000000 | Random: 11 | Greedy: 1546
+Episode :  515 | Cumulative Reward :  -18 | Epsilon: 0.010 | Loss: 0.000000 | Random: 19 | Greedy: 1579
+Episode :  516 | Cumulative Reward :  -18 | Epsilon: 0.010 | Loss: 0.000000 | Random: 13 | Greedy: 1567
+Episode :  517 | Cumulative Reward :  -16 | Epsilon: 0.010 | Loss: 0.000000 | Random: 16 | Greedy: 1596
+Traceback (most recent call last):
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DQN/train_DQN.py", line 120, in <module>
+    a = agent.get_action(s, DEVICE)
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DQN/vanilla_DQN.py", line 24, in get_action
+    qs = self.qnet(state)
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DQN/vanilla_CNN.py", line 23, in forward
+    x = F.relu(self.bn1(self.conv1(x)))
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 443, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 439, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

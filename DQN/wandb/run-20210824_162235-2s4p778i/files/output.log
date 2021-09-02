@@ -1,0 +1,8 @@
+Target Network Updated!
+Episode :    0 | Cumulative Reward :  -21 | Epsilon: 1.000 | Loss: 0.000000 | Random: 848 | Greedy: 0
+Traceback (most recent call last):
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DQN/train_DQN.py", line 166, in <module>
+    wandb.log(epsilon)
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1110, in log
+    raise ValueError("wandb.log must be passed a dictionary")
+ValueError: wandb.log must be passed a dictionary

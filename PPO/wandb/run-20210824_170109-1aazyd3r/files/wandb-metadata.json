@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-81-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2021-08-24T08:01:10.690950",
+    "startedAt": "2021-08-24T08:01:09.861779",
+    "docker": null,
+    "gpu": "GeForce GTX 1080 Ti",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/jungwoo/catkin_ws/src/RL_practice/PPO/PPO.py",
+    "codePath": "PPO/PPO.py",
+    "git": {
+        "remote": "https://github.com/jungwoohan72/RL_practice.git",
+        "commit": "ae4c5dc5a007fe52df4478a6b5c7db92355242a1"
+    },
+    "email": "jungwoohan72@kaist.ac.kr",
+    "root": "/home/jungwoo/catkin_ws/src/RL_practice",
+    "host": "Jungwoo",
+    "username": "jungwoo",
+    "executable": "/home/jungwoo/anaconda3/envs/torch/bin/python"
+}

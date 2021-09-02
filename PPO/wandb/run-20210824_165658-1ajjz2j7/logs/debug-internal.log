@@ -1,0 +1,215 @@
+2021-08-24 16:56:58,808 INFO    MainThread:22111 [internal.py:wandb_internal():86] W&B internal server running at pid: 22111, started at: 2021-08-24 16:56:58.808406
+2021-08-24 16:56:58,810 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: check_version
+2021-08-24 16:56:58,810 INFO    WriterThread:22111 [datastore.py:open_for_write():77] open: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/run-1ajjz2j7.wandb
+2021-08-24 16:56:58,811 DEBUG   SenderThread:22111 [sender.py:send():182] send: header
+2021-08-24 16:56:58,811 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: check_version
+2021-08-24 16:56:58,961 DEBUG   SenderThread:22111 [sender.py:send():182] send: run
+2021-08-24 16:56:59,349 INFO    SenderThread:22111 [dir_watcher.py:__init__():168] watching files in: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files
+2021-08-24 16:56:59,349 INFO    SenderThread:22111 [sender.py:_start_run_threads():740] run started: 1ajjz2j7 with start time 1629791818
+2021-08-24 16:56:59,350 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:56:59,350 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: run_start
+2021-08-24 16:56:59,352 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:56:59,356 DEBUG   HandlerThread:22111 [meta.py:__init__():39] meta init
+2021-08-24 16:56:59,356 DEBUG   HandlerThread:22111 [meta.py:__init__():53] meta init done
+2021-08-24 16:56:59,356 DEBUG   HandlerThread:22111 [meta.py:probe():210] probe
+2021-08-24 16:56:59,362 DEBUG   HandlerThread:22111 [meta.py:_setup_git():200] setup git
+2021-08-24 16:56:59,369 DEBUG   HandlerThread:22111 [meta.py:_setup_git():207] setup git done
+2021-08-24 16:56:59,369 DEBUG   HandlerThread:22111 [meta.py:_save_pip():57] save pip
+2021-08-24 16:56:59,369 DEBUG   HandlerThread:22111 [meta.py:_save_pip():71] save pip done
+2021-08-24 16:56:59,369 DEBUG   HandlerThread:22111 [meta.py:_save_conda():78] save conda
+2021-08-24 16:57:00,349 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_created():216] file/dir created: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/conda-environment.yaml
+2021-08-24 16:57:00,357 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_created():216] file/dir created: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:00,357 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_created():216] file/dir created: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/requirements.txt
+2021-08-24 16:57:00,632 DEBUG   HandlerThread:22111 [meta.py:_save_conda():86] save conda done
+2021-08-24 16:57:00,632 DEBUG   HandlerThread:22111 [meta.py:probe():252] probe done
+2021-08-24 16:57:00,634 DEBUG   SenderThread:22111 [sender.py:send():182] send: files
+2021-08-24 16:57:00,635 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-08-24 16:57:00,638 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: stop_status
+2021-08-24 16:57:00,638 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: stop_status
+2021-08-24 16:57:00,988 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:00,988 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:00,988 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:01,028 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:01,029 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:01,029 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:01,349 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/conda-environment.yaml
+2021-08-24 16:57:01,349 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:01,349 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_created():216] file/dir created: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/output.log
+2021-08-24 16:57:01,349 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_created():216] file/dir created: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-metadata.json
+2021-08-24 16:57:01,353 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:01,353 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:01,355 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:01,489 INFO    Thread-11 :22111 [upload_job.py:push():137] Uploaded file /tmp/tmpalbwaqwtwandb/l4zypn38-wandb-metadata.json
+2021-08-24 16:57:01,673 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:01,673 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:01,674 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:02,040 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:02,041 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:02,041 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:02,349 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:02,557 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:02,557 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:02,557 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:03,049 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:03,049 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:03,050 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:03,349 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/output.log
+2021-08-24 16:57:03,349 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:03,527 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:03,528 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:03,528 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:04,348 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:04,348 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:04,349 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:04,349 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:05,249 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:05,249 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:05,250 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:05,350 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/output.log
+2021-08-24 16:57:05,350 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:06,182 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:06,182 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:06,185 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:06,350 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:07,077 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:07,077 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:07,078 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:07,350 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/output.log
+2021-08-24 16:57:07,350 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:08,255 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:08,255 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:08,258 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:08,350 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:09,351 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/output.log
+2021-08-24 16:57:09,722 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:09,723 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:09,723 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:10,351 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:10,898 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:10,898 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:10,899 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:11,351 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/output.log
+2021-08-24 16:57:11,351 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:11,516 DEBUG   SenderThread:22111 [sender.py:send():182] send: history
+2021-08-24 16:57:11,517 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:11,517 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:12,351 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:12,582 WARNING MainThread:22111 [internal.py:wandb_internal():145] Internal process interrupt: 1
+2021-08-24 16:57:13,352 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/output.log
+2021-08-24 16:57:15,159 DEBUG   SenderThread:22111 [sender.py:send():182] send: telemetry
+2021-08-24 16:57:15,160 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:15,160 DEBUG   SenderThread:22111 [sender.py:send():182] send: exit
+2021-08-24 16:57:15,161 INFO    SenderThread:22111 [sender.py:send_exit():291] handling exit code: 255
+2021-08-24 16:57:15,161 INFO    SenderThread:22111 [sender.py:send_exit():293] handling runtime: 15
+2021-08-24 16:57:15,162 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:15,162 INFO    SenderThread:22111 [sender.py:send_exit():303] send defer
+2021-08-24 16:57:15,163 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:15,164 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: defer
+2021-08-24 16:57:15,164 INFO    HandlerThread:22111 [handler.py:handle_request_defer():145] handle defer: 0
+2021-08-24 16:57:15,165 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: defer
+2021-08-24 16:57:15,165 INFO    SenderThread:22111 [sender.py:send_request_defer():312] handle sender defer: 0
+2021-08-24 16:57:15,165 INFO    SenderThread:22111 [sender.py:transition_state():316] send defer: 1
+2021-08-24 16:57:15,166 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: defer
+2021-08-24 16:57:15,166 INFO    HandlerThread:22111 [handler.py:handle_request_defer():145] handle defer: 1
+2021-08-24 16:57:15,210 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: defer
+2021-08-24 16:57:15,210 INFO    SenderThread:22111 [sender.py:send_request_defer():312] handle sender defer: 1
+2021-08-24 16:57:15,210 INFO    SenderThread:22111 [sender.py:transition_state():316] send defer: 2
+2021-08-24 16:57:15,211 DEBUG   SenderThread:22111 [sender.py:send():182] send: stats
+2021-08-24 16:57:15,211 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: defer
+2021-08-24 16:57:15,211 INFO    HandlerThread:22111 [handler.py:handle_request_defer():145] handle defer: 2
+2021-08-24 16:57:15,212 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: defer
+2021-08-24 16:57:15,212 INFO    SenderThread:22111 [sender.py:send_request_defer():312] handle sender defer: 2
+2021-08-24 16:57:15,212 INFO    SenderThread:22111 [sender.py:transition_state():316] send defer: 3
+2021-08-24 16:57:15,212 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: defer
+2021-08-24 16:57:15,212 INFO    HandlerThread:22111 [handler.py:handle_request_defer():145] handle defer: 3
+2021-08-24 16:57:15,213 DEBUG   SenderThread:22111 [sender.py:send():182] send: summary
+2021-08-24 16:57:15,213 INFO    SenderThread:22111 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-24 16:57:15,214 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: defer
+2021-08-24 16:57:15,214 INFO    SenderThread:22111 [sender.py:send_request_defer():312] handle sender defer: 3
+2021-08-24 16:57:15,214 INFO    SenderThread:22111 [sender.py:transition_state():316] send defer: 4
+2021-08-24 16:57:15,214 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: defer
+2021-08-24 16:57:15,214 INFO    HandlerThread:22111 [handler.py:handle_request_defer():145] handle defer: 4
+2021-08-24 16:57:15,215 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: defer
+2021-08-24 16:57:15,215 INFO    SenderThread:22111 [sender.py:send_request_defer():312] handle sender defer: 4
+2021-08-24 16:57:15,267 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:15,353 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/output.log
+2021-08-24 16:57:15,353 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:15,580 INFO    SenderThread:22111 [sender.py:transition_state():316] send defer: 5
+2021-08-24 16:57:15,580 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:15,580 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: defer
+2021-08-24 16:57:15,580 INFO    HandlerThread:22111 [handler.py:handle_request_defer():145] handle defer: 5
+2021-08-24 16:57:15,580 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: defer
+2021-08-24 16:57:15,580 INFO    SenderThread:22111 [sender.py:send_request_defer():312] handle sender defer: 5
+2021-08-24 16:57:15,580 INFO    SenderThread:22111 [dir_watcher.py:finish():282] shutting down directory watcher
+2021-08-24 16:57:15,681 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:16,354 INFO    Thread-8  :22111 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/config.yaml
+2021-08-24 16:57:16,355 INFO    SenderThread:22111 [dir_watcher.py:finish():312] scan: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files
+2021-08-24 16:57:16,356 INFO    SenderThread:22111 [dir_watcher.py:finish():318] scan save: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/config.yaml config.yaml
+2021-08-24 16:57:16,356 INFO    SenderThread:22111 [dir_watcher.py:finish():318] scan save: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/output.log output.log
+2021-08-24 16:57:16,357 INFO    SenderThread:22111 [dir_watcher.py:finish():318] scan save: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json wandb-summary.json
+2021-08-24 16:57:16,369 INFO    SenderThread:22111 [dir_watcher.py:finish():318] scan save: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/conda-environment.yaml conda-environment.yaml
+2021-08-24 16:57:16,370 INFO    SenderThread:22111 [dir_watcher.py:finish():318] scan save: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/requirements.txt requirements.txt
+2021-08-24 16:57:16,382 INFO    SenderThread:22111 [dir_watcher.py:finish():318] scan save: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-metadata.json wandb-metadata.json
+2021-08-24 16:57:16,382 INFO    SenderThread:22111 [sender.py:transition_state():316] send defer: 6
+2021-08-24 16:57:16,383 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:16,384 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: defer
+2021-08-24 16:57:16,409 INFO    HandlerThread:22111 [handler.py:handle_request_defer():145] handle defer: 6
+2021-08-24 16:57:16,410 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: defer
+2021-08-24 16:57:16,410 INFO    SenderThread:22111 [sender.py:send_request_defer():312] handle sender defer: 6
+2021-08-24 16:57:16,414 INFO    SenderThread:22111 [file_pusher.py:finish():177] shutting down file pusher
+2021-08-24 16:57:16,493 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:16,494 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:16,597 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:16,598 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:16,700 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:16,701 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:16,802 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:16,803 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:16,905 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:16,906 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:17,009 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:17,009 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:17,110 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:17,110 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:17,165 INFO    Thread-12 :22111 [upload_job.py:push():137] Uploaded file /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/config.yaml
+2021-08-24 16:57:17,212 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:17,213 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:17,228 INFO    Thread-13 :22111 [upload_job.py:push():137] Uploaded file /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/output.log
+2021-08-24 16:57:17,234 INFO    Thread-16 :22111 [upload_job.py:push():137] Uploaded file /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/requirements.txt
+2021-08-24 16:57:17,239 INFO    Thread-14 :22111 [upload_job.py:push():137] Uploaded file /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/wandb-summary.json
+2021-08-24 16:57:17,268 INFO    Thread-15 :22111 [upload_job.py:push():137] Uploaded file /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/files/conda-environment.yaml
+2021-08-24 16:57:17,317 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:17,317 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:17,420 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:17,421 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:17,470 INFO    Thread-7  :22111 [sender.py:transition_state():316] send defer: 7
+2021-08-24 16:57:17,471 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: defer
+2021-08-24 16:57:17,471 INFO    HandlerThread:22111 [handler.py:handle_request_defer():145] handle defer: 7
+2021-08-24 16:57:17,472 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: defer
+2021-08-24 16:57:17,472 INFO    SenderThread:22111 [sender.py:send_request_defer():312] handle sender defer: 7
+2021-08-24 16:57:17,523 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:17,712 INFO    SenderThread:22111 [sender.py:transition_state():316] send defer: 8
+2021-08-24 16:57:17,713 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:17,714 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: defer
+2021-08-24 16:57:17,714 INFO    HandlerThread:22111 [handler.py:handle_request_defer():145] handle defer: 8
+2021-08-24 16:57:17,715 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: defer
+2021-08-24 16:57:17,715 INFO    SenderThread:22111 [sender.py:send_request_defer():312] handle sender defer: 8
+2021-08-24 16:57:17,715 INFO    SenderThread:22111 [sender.py:transition_state():316] send defer: 9
+2021-08-24 16:57:17,717 DEBUG   SenderThread:22111 [sender.py:send():182] send: final
+2021-08-24 16:57:17,718 DEBUG   SenderThread:22111 [sender.py:send():182] send: footer
+2021-08-24 16:57:17,718 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: defer
+2021-08-24 16:57:17,719 INFO    HandlerThread:22111 [handler.py:handle_request_defer():145] handle defer: 9
+2021-08-24 16:57:17,719 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: defer
+2021-08-24 16:57:17,719 INFO    SenderThread:22111 [sender.py:send_request_defer():312] handle sender defer: 9
+2021-08-24 16:57:17,817 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: poll_exit
+2021-08-24 16:57:17,818 DEBUG   SenderThread:22111 [sender.py:send_request():196] send_request: poll_exit
+2021-08-24 16:57:17,818 INFO    SenderThread:22111 [file_pusher.py:join():182] waiting for file pusher
+2021-08-24 16:57:17,822 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: get_summary
+2021-08-24 16:57:17,824 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: sampled_history
+2021-08-24 16:57:17,827 DEBUG   HandlerThread:22111 [handler.py:handle_request():128] handle_request: shutdown
+2021-08-24 16:57:17,827 INFO    HandlerThread:22111 [handler.py:finish():677] shutting down handler
+2021-08-24 16:57:18,718 INFO    WriterThread:22111 [datastore.py:close():281] close: /home/jungwoo/catkin_ws/src/RL_practice/PPO/wandb/run-20210824_165658-1ajjz2j7/run-1ajjz2j7.wandb
+2021-08-24 16:57:18,819 INFO    SenderThread:22111 [sender.py:finish():979] shutting down sender
+2021-08-24 16:57:18,819 INFO    SenderThread:22111 [file_pusher.py:finish():177] shutting down file pusher
+2021-08-24 16:57:18,819 INFO    SenderThread:22111 [file_pusher.py:join():182] waiting for file pusher
+2021-08-24 16:57:18,823 INFO    MainThread:22111 [internal.py:handle_exit():76] Internal process exited

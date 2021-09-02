@@ -1,0 +1,37 @@
+# of episode :20, avg score : 18.2
+# of episode :40, avg score : 30.0
+# of episode :60, avg score : 31.4
+# of episode :80, avg score : 41.3
+# of episode :100, avg score : 56.6
+# of episode :120, avg score : 75.5
+# of episode :140, avg score : 120.2
+# of episode :160, avg score : 172.3
+# of episode :180, avg score : 190.8
+# of episode :200, avg score : 287.9
+# of episode :220, avg score : 279.7
+# of episode :240, avg score : 231.1
+# of episode :260, avg score : 299.4
+# of episode :280, avg score : 310.9
+# of episode :300, avg score : 350.1
+# of episode :320, avg score : 301.2
+# of episode :340, avg score : 439.6
+# of episode :360, avg score : 363.1
+# of episode :380, avg score : 327.9
+# of episode :400, avg score : 469.9
+# of episode :420, avg score : 494.2
+# of episode :440, avg score : 393.0
+# of episode :460, avg score : 243.1
+# of episode :480, avg score : 483.7
+# of episode :500, avg score : 500.0
+# of episode :520, avg score : 469.0
+# of episode :540, avg score : 432.6
+# of episode :560, avg score : 386.9
+# of episode :580, avg score : 220.8
+Traceback (most recent call last):
+  File "/home/jungwoo/catkin_ws/src/RL_practice/PPO/PPO.py", line 135, in <module>
+    main()
+  File "/home/jungwoo/catkin_ws/src/RL_practice/PPO/PPO.py", line 108, in main
+    a = m.sample().item()
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/torch/distributions/categorical.py", line 112, in sample
+    samples_2d = torch.multinomial(probs_2d, sample_shape.numel(), True).T
+KeyboardInterrupt

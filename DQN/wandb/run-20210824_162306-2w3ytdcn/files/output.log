@@ -1,0 +1,293 @@
+Target Network Updated!
+Episode :    0 | Cumulative Reward :  -20 | Epsilon: 1.000 | Loss: 0.000000 | Random: 1052 | Greedy: 0
+Episode :    1 | Cumulative Reward :  -20 | Epsilon: 0.990 | Loss: 0.000000 | Random: 1263 | Greedy: 15
+Episode :    2 | Cumulative Reward :  -21 | Epsilon: 0.980 | Loss: 0.000000 | Random: 993 | Greedy: 23
+Episode :    3 | Cumulative Reward :  -21 | Epsilon: 0.970 | Loss: 0.000000 | Random: 1003 | Greedy: 32
+Episode :    4 | Cumulative Reward :  -20 | Epsilon: 0.961 | Loss: 0.000000 | Random: 941 | Greedy: 24
+Episode :    5 | Cumulative Reward :  -20 | Epsilon: 0.951 | Loss: 0.000000 | Random: 835 | Greedy: 43
+Episode :    6 | Cumulative Reward :  -20 | Epsilon: 0.941 | Loss: 0.000000 | Random: 916 | Greedy: 62
+Episode :    7 | Cumulative Reward :  -19 | Epsilon: 0.932 | Loss: 0.000000 | Random: 921 | Greedy: 77
+Episode :    8 | Cumulative Reward :  -21 | Epsilon: 0.923 | Loss: 0.000000 | Random: 852 | Greedy: 82
+Episode :    9 | Cumulative Reward :  -19 | Epsilon: 0.914 | Loss: 0.000000 | Random: 895 | Greedy: 89
+Target Network Updated!
+Episode :   10 | Cumulative Reward :  -21 | Epsilon: 0.904 | Loss: 0.000000 | Random: 885 | Greedy: 87
+Episode :   11 | Cumulative Reward :  -20 | Epsilon: 0.895 | Loss: 0.000000 | Random: 934 | Greedy: 105
+Episode :   12 | Cumulative Reward :  -20 | Epsilon: 0.886 | Loss: 0.000000 | Random: 821 | Greedy: 111
+Episode :   13 | Cumulative Reward :  -19 | Epsilon: 0.878 | Loss: 0.000000 | Random: 1012 | Greedy: 118
+Episode :   14 | Cumulative Reward :  -21 | Epsilon: 0.869 | Loss: 0.000000 | Random: 672 | Greedy: 111
+Episode :   15 | Cumulative Reward :  -21 | Epsilon: 0.860 | Loss: 0.000000 | Random: 852 | Greedy: 126
+Episode :   16 | Cumulative Reward :  -21 | Epsilon: 0.851 | Loss: 0.000000 | Random: 691 | Greedy: 133
+Episode :   17 | Cumulative Reward :  -21 | Epsilon: 0.843 | Loss: 0.000000 | Random: 679 | Greedy: 104
+Episode :   18 | Cumulative Reward :  -21 | Epsilon: 0.835 | Loss: 0.000000 | Random: 748 | Greedy: 142
+Episode :   19 | Cumulative Reward :  -21 | Epsilon: 0.826 | Loss: 0.000000 | Random: 805 | Greedy: 167
+Target Network Updated!
+Episode :   20 | Cumulative Reward :  -21 | Epsilon: 0.818 | Loss: 0.000000 | Random: 788 | Greedy: 177
+Episode :   21 | Cumulative Reward :  -21 | Epsilon: 0.810 | Loss: 0.000000 | Random: 609 | Greedy: 155
+Episode :   22 | Cumulative Reward :  -19 | Epsilon: 0.802 | Loss: 0.000000 | Random: 935 | Greedy: 220
+Episode :   23 | Cumulative Reward :  -20 | Epsilon: 0.794 | Loss: 0.000000 | Random: 702 | Greedy: 196
+Episode :   24 | Cumulative Reward :  -21 | Epsilon: 0.786 | Loss: 0.000000 | Random: 639 | Greedy: 205
+Episode :   25 | Cumulative Reward :  -20 | Epsilon: 0.778 | Loss: 0.000000 | Random: 665 | Greedy: 172
+Episode :   26 | Cumulative Reward :  -20 | Epsilon: 0.770 | Loss: 0.000000 | Random: 659 | Greedy: 183
+Episode :   27 | Cumulative Reward :  -20 | Epsilon: 0.762 | Loss: 0.000000 | Random: 752 | Greedy: 229
+Episode :   28 | Cumulative Reward :  -20 | Epsilon: 0.755 | Loss: 0.000000 | Random: 739 | Greedy: 247
+Episode :   29 | Cumulative Reward :  -20 | Epsilon: 0.747 | Loss: 0.000000 | Random: 688 | Greedy: 199
+Target Network Updated!
+Episode :   30 | Cumulative Reward :  -20 | Epsilon: 0.740 | Loss: 0.000000 | Random: 651 | Greedy: 247
+Episode :   31 | Cumulative Reward :  -21 | Epsilon: 0.732 | Loss: 0.000000 | Random: 591 | Greedy: 201
+Episode :   32 | Cumulative Reward :  -21 | Epsilon: 0.725 | Loss: 0.000000 | Random: 584 | Greedy: 227
+Episode :   33 | Cumulative Reward :  -20 | Epsilon: 0.718 | Loss: 0.000000 | Random: 648 | Greedy: 273
+Episode :   34 | Cumulative Reward :  -20 | Epsilon: 0.711 | Loss: 0.000000 | Random: 613 | Greedy: 291
+Episode :   35 | Cumulative Reward :  -21 | Epsilon: 0.703 | Loss: 0.000000 | Random: 563 | Greedy: 249
+Episode :   36 | Cumulative Reward :  -20 | Epsilon: 0.696 | Loss: 0.000000 | Random: 570 | Greedy: 268
+Episode :   37 | Cumulative Reward :  -18 | Epsilon: 0.689 | Loss: 0.000000 | Random: 691 | Greedy: 330
+Episode :   38 | Cumulative Reward :  -20 | Epsilon: 0.683 | Loss: 0.000000 | Random: 666 | Greedy: 292
+Episode :   39 | Cumulative Reward :  -21 | Epsilon: 0.676 | Loss: 0.000000 | Random: 626 | Greedy: 307
+Target Network Updated!
+Episode :   40 | Cumulative Reward :  -20 | Epsilon: 0.669 | Loss: 0.000000 | Random: 644 | Greedy: 338
+Episode :   41 | Cumulative Reward :  -19 | Epsilon: 0.662 | Loss: 0.000000 | Random: 679 | Greedy: 346
+Training Start
+Episode :   42 | Cumulative Reward :  -21 | Epsilon: 0.656 | Loss: 0.017607 | Random: 504 | Greedy: 278
+Episode :   43 | Cumulative Reward :  -21 | Epsilon: 0.649 | Loss: 0.003035 | Random: 522 | Greedy: 334
+Episode :   44 | Cumulative Reward :  -21 | Epsilon: 0.643 | Loss: 0.002155 | Random: 476 | Greedy: 288
+Episode :   45 | Cumulative Reward :  -18 | Epsilon: 0.636 | Loss: 0.001547 | Random: 715 | Greedy: 362
+Episode :   46 | Cumulative Reward :  -20 | Epsilon: 0.630 | Loss: 0.001699 | Random: 541 | Greedy: 330
+Episode :   47 | Cumulative Reward :  -21 | Epsilon: 0.624 | Loss: 0.001632 | Random: 527 | Greedy: 357
+Episode :   48 | Cumulative Reward :  -20 | Epsilon: 0.617 | Loss: 0.001597 | Random: 590 | Greedy: 359
+Episode :   49 | Cumulative Reward :  -21 | Epsilon: 0.611 | Loss: 0.001509 | Random: 642 | Greedy: 420
+Target Network Updated!
+Episode :   50 | Cumulative Reward :  -21 | Epsilon: 0.605 | Loss: 0.001951 | Random: 500 | Greedy: 324
+Episode :   51 | Cumulative Reward :  -20 | Epsilon: 0.599 | Loss: 0.001760 | Random: 511 | Greedy: 419
+Episode :   52 | Cumulative Reward :  -21 | Epsilon: 0.593 | Loss: 0.000703 | Random: 509 | Greedy: 311
+Episode :   53 | Cumulative Reward :  -20 | Epsilon: 0.587 | Loss: 0.000710 | Random: 598 | Greedy: 398
+Episode :   54 | Cumulative Reward :  -21 | Epsilon: 0.581 | Loss: 0.001477 | Random: 443 | Greedy: 321
+Episode :   55 | Cumulative Reward :  -21 | Epsilon: 0.575 | Loss: 0.000579 | Random: 494 | Greedy: 376
+Episode :   56 | Cumulative Reward :  -21 | Epsilon: 0.570 | Loss: 0.000413 | Random: 493 | Greedy: 350
+Episode :   57 | Cumulative Reward :  -18 | Epsilon: 0.564 | Loss: 0.000388 | Random: 652 | Greedy: 479
+Episode :   58 | Cumulative Reward :  -20 | Epsilon: 0.558 | Loss: 0.000381 | Random: 562 | Greedy: 444
+Episode :   59 | Cumulative Reward :  -20 | Epsilon: 0.553 | Loss: 0.000382 | Random: 555 | Greedy: 429
+Target Network Updated!
+Episode :   60 | Cumulative Reward :  -21 | Epsilon: 0.547 | Loss: 0.000268 | Random: 485 | Greedy: 416
+Episode :   61 | Cumulative Reward :  -19 | Epsilon: 0.542 | Loss: 0.000848 | Random: 636 | Greedy: 572
+Episode :   62 | Cumulative Reward :  -20 | Epsilon: 0.536 | Loss: 0.000460 | Random: 518 | Greedy: 430
+Episode :   63 | Cumulative Reward :  -21 | Epsilon: 0.531 | Loss: 0.000478 | Random: 523 | Greedy: 409
+Episode :   64 | Cumulative Reward :  -21 | Epsilon: 0.526 | Loss: 0.000423 | Random: 468 | Greedy: 416
+Episode :   65 | Cumulative Reward :  -20 | Epsilon: 0.520 | Loss: 0.000444 | Random: 547 | Greedy: 535
+Episode :   66 | Cumulative Reward :  -20 | Epsilon: 0.515 | Loss: 0.001178 | Random: 552 | Greedy: 467
+Episode :   67 | Cumulative Reward :  -20 | Epsilon: 0.510 | Loss: 0.000545 | Random: 483 | Greedy: 492
+Episode :   68 | Cumulative Reward :  -20 | Epsilon: 0.505 | Loss: 0.000521 | Random: 452 | Greedy: 435
+Episode :   69 | Cumulative Reward :  -21 | Epsilon: 0.500 | Loss: 0.000230 | Random: 438 | Greedy: 405
+Target Network Updated!
+Episode :   70 | Cumulative Reward :  -21 | Epsilon: 0.495 | Loss: 0.000523 | Random: 372 | Greedy: 392
+Episode :   71 | Cumulative Reward :  -21 | Epsilon: 0.490 | Loss: 0.000904 | Random: 433 | Greedy: 451
+Episode :   72 | Cumulative Reward :  -21 | Epsilon: 0.485 | Loss: 0.000719 | Random: 367 | Greedy: 425
+Episode :   73 | Cumulative Reward :  -21 | Epsilon: 0.480 | Loss: 0.000478 | Random: 410 | Greedy: 474
+Episode :   74 | Cumulative Reward :  -20 | Epsilon: 0.475 | Loss: 0.000783 | Random: 389 | Greedy: 453
+Episode :   75 | Cumulative Reward :  -21 | Epsilon: 0.471 | Loss: 0.002855 | Random: 342 | Greedy: 422
+Episode :   76 | Cumulative Reward :  -21 | Epsilon: 0.466 | Loss: 0.000433 | Random: 399 | Greedy: 450
+Episode :   77 | Cumulative Reward :  -21 | Epsilon: 0.461 | Loss: 0.000247 | Random: 431 | Greedy: 513
+Episode :   78 | Cumulative Reward :  -21 | Epsilon: 0.457 | Loss: 0.000526 | Random: 368 | Greedy: 424
+Episode :   79 | Cumulative Reward :  -21 | Epsilon: 0.452 | Loss: 0.000340 | Random: 348 | Greedy: 416
+Target Network Updated!
+Episode :   80 | Cumulative Reward :  -21 | Epsilon: 0.448 | Loss: 0.000726 | Random: 419 | Greedy: 513
+Episode :   81 | Cumulative Reward :  -21 | Epsilon: 0.443 | Loss: 0.000533 | Random: 349 | Greedy: 461
+Episode :   82 | Cumulative Reward :  -21 | Epsilon: 0.439 | Loss: 0.000423 | Random: 383 | Greedy: 467
+Episode :   83 | Cumulative Reward :  -21 | Epsilon: 0.434 | Loss: 0.002278 | Random: 350 | Greedy: 414
+Episode :   84 | Cumulative Reward :  -20 | Epsilon: 0.430 | Loss: 0.000947 | Random: 349 | Greedy: 571
+Episode :   85 | Cumulative Reward :  -21 | Epsilon: 0.426 | Loss: 0.001460 | Random: 315 | Greedy: 449
+Episode :   86 | Cumulative Reward :  -21 | Epsilon: 0.421 | Loss: 0.001098 | Random: 324 | Greedy: 440
+Episode :   87 | Cumulative Reward :  -21 | Epsilon: 0.417 | Loss: 0.000469 | Random: 299 | Greedy: 465
+Episode :   88 | Cumulative Reward :  -21 | Epsilon: 0.413 | Loss: 0.000333 | Random: 328 | Greedy: 497
+Episode :   89 | Cumulative Reward :  -21 | Epsilon: 0.409 | Loss: 0.003064 | Random: 309 | Greedy: 455
+Target Network Updated!
+Episode :   90 | Cumulative Reward :  -21 | Epsilon: 0.405 | Loss: 0.000499 | Random: 310 | Greedy: 454
+Episode :   91 | Cumulative Reward :  -21 | Epsilon: 0.401 | Loss: 0.003238 | Random: 317 | Greedy: 567
+Episode :   92 | Cumulative Reward :  -21 | Epsilon: 0.397 | Loss: 0.000854 | Random: 291 | Greedy: 501
+Episode :   93 | Cumulative Reward :  -21 | Epsilon: 0.393 | Loss: 0.000615 | Random: 299 | Greedy: 465
+Episode :   94 | Cumulative Reward :  -21 | Epsilon: 0.389 | Loss: 0.000621 | Random: 337 | Greedy: 427
+Episode :   95 | Cumulative Reward :  -21 | Epsilon: 0.385 | Loss: 0.003291 | Random: 351 | Greedy: 554
+Episode :   96 | Cumulative Reward :  -21 | Epsilon: 0.381 | Loss: 0.000331 | Random: 300 | Greedy: 524
+Episode :   97 | Cumulative Reward :  -21 | Epsilon: 0.377 | Loss: 0.007435 | Random: 302 | Greedy: 462
+Episode :   98 | Cumulative Reward :  -21 | Epsilon: 0.373 | Loss: 0.000241 | Random: 298 | Greedy: 466
+Episode :   99 | Cumulative Reward :  -21 | Epsilon: 0.370 | Loss: 0.000377 | Random: 270 | Greedy: 494
+Target Network Updated!
+Episode :  100 | Cumulative Reward :  -21 | Epsilon: 0.366 | Loss: 0.000224 | Random: 311 | Greedy: 543
+Episode :  101 | Cumulative Reward :  -20 | Epsilon: 0.362 | Loss: 0.000336 | Random: 339 | Greedy: 658
+Episode :  102 | Cumulative Reward :  -19 | Epsilon: 0.359 | Loss: 0.000969 | Random: 389 | Greedy: 680
+Episode :  103 | Cumulative Reward :  -21 | Epsilon: 0.355 | Loss: 0.000753 | Random: 312 | Greedy: 630
+Episode :  104 | Cumulative Reward :  -19 | Epsilon: 0.352 | Loss: 0.000649 | Random: 427 | Greedy: 756
+Episode :  105 | Cumulative Reward :  -17 | Epsilon: 0.348 | Loss: 0.001170 | Random: 458 | Greedy: 901
+Episode :  106 | Cumulative Reward :  -20 | Epsilon: 0.345 | Loss: 0.004134 | Random: 474 | Greedy: 796
+Episode :  107 | Cumulative Reward :  -21 | Epsilon: 0.341 | Loss: 0.000892 | Random: 439 | Greedy: 855
+Episode :  108 | Cumulative Reward :  -21 | Epsilon: 0.338 | Loss: 0.000321 | Random: 342 | Greedy: 668
+Episode :  109 | Cumulative Reward :  -21 | Epsilon: 0.334 | Loss: 0.001795 | Random: 312 | Greedy: 725
+Target Network Updated!
+Episode :  110 | Cumulative Reward :  -19 | Epsilon: 0.331 | Loss: 0.000416 | Random: 455 | Greedy: 849
+Episode :  111 | Cumulative Reward :  -19 | Epsilon: 0.328 | Loss: 0.000475 | Random: 387 | Greedy: 817
+Episode :  112 | Cumulative Reward :  -19 | Epsilon: 0.324 | Loss: 0.000826 | Random: 423 | Greedy: 953
+Episode :  113 | Cumulative Reward :  -20 | Epsilon: 0.321 | Loss: 0.003612 | Random: 358 | Greedy: 770
+Episode :  114 | Cumulative Reward :  -20 | Epsilon: 0.318 | Loss: 0.000265 | Random: 370 | Greedy: 809
+Episode :  115 | Cumulative Reward :  -18 | Epsilon: 0.315 | Loss: 0.001115 | Random: 388 | Greedy: 863
+Episode :  116 | Cumulative Reward :  -17 | Epsilon: 0.312 | Loss: 0.001020 | Random: 427 | Greedy: 976
+Episode :  117 | Cumulative Reward :  -19 | Epsilon: 0.309 | Loss: 0.001117 | Random: 405 | Greedy: 912
+Episode :  118 | Cumulative Reward :  -16 | Epsilon: 0.305 | Loss: 0.001321 | Random: 477 | Greedy: 951
+Episode :  119 | Cumulative Reward :  -17 | Epsilon: 0.302 | Loss: 0.000908 | Random: 381 | Greedy: 941
+Target Network Updated!
+Episode :  120 | Cumulative Reward :  -17 | Epsilon: 0.299 | Loss: 0.000495 | Random: 410 | Greedy: 977
+Episode :  121 | Cumulative Reward :  -21 | Epsilon: 0.296 | Loss: 0.001861 | Random: 359 | Greedy: 808
+Episode :  122 | Cumulative Reward :  -21 | Epsilon: 0.293 | Loss: 0.000682 | Random: 368 | Greedy: 875
+Episode :  123 | Cumulative Reward :  -20 | Epsilon: 0.290 | Loss: 0.001703 | Random: 300 | Greedy: 719
+Episode :  124 | Cumulative Reward :  -20 | Epsilon: 0.288 | Loss: 0.001207 | Random: 295 | Greedy: 755
+Episode :  125 | Cumulative Reward :  -16 | Epsilon: 0.285 | Loss: 0.002385 | Random: 457 | Greedy: 1111
+Episode :  126 | Cumulative Reward :  -20 | Epsilon: 0.282 | Loss: 0.002000 | Random: 368 | Greedy: 907
+Episode :  127 | Cumulative Reward :  -20 | Epsilon: 0.279 | Loss: 0.002309 | Random: 374 | Greedy: 901
+Episode :  128 | Cumulative Reward :  -18 | Epsilon: 0.276 | Loss: 0.003650 | Random: 295 | Greedy: 803
+Episode :  129 | Cumulative Reward :  -18 | Epsilon: 0.273 | Loss: 0.002625 | Random: 290 | Greedy: 872
+Target Network Updated!
+Episode :  130 | Cumulative Reward :  -19 | Epsilon: 0.271 | Loss: 0.002471 | Random: 310 | Greedy: 865
+Episode :  131 | Cumulative Reward :  -18 | Epsilon: 0.268 | Loss: 0.001048 | Random: 359 | Greedy: 990
+Episode :  132 | Cumulative Reward :  -21 | Epsilon: 0.265 | Loss: 0.000857 | Random: 275 | Greedy: 797
+Episode :  133 | Cumulative Reward :  -20 | Epsilon: 0.263 | Loss: 0.001212 | Random: 348 | Greedy: 893
+Episode :  134 | Cumulative Reward :  -18 | Epsilon: 0.260 | Loss: 0.007728 | Random: 352 | Greedy: 939
+Episode :  135 | Cumulative Reward :  -15 | Epsilon: 0.257 | Loss: 0.000840 | Random: 445 | Greedy: 1314
+Episode :  136 | Cumulative Reward :  -19 | Epsilon: 0.255 | Loss: 0.001389 | Random: 334 | Greedy: 1040
+Episode :  137 | Cumulative Reward :  -20 | Epsilon: 0.252 | Loss: 0.001438 | Random: 278 | Greedy: 826
+Episode :  138 | Cumulative Reward :  -20 | Epsilon: 0.250 | Loss: 0.000426 | Random: 283 | Greedy: 885
+Episode :  139 | Cumulative Reward :  -20 | Epsilon: 0.247 | Loss: 0.000766 | Random: 265 | Greedy: 877
+Target Network Updated!
+Episode :  140 | Cumulative Reward :  -20 | Epsilon: 0.245 | Loss: 0.002919 | Random: 231 | Greedy: 805
+Episode :  141 | Cumulative Reward :  -18 | Epsilon: 0.242 | Loss: 0.006649 | Random: 325 | Greedy: 1054
+Episode :  142 | Cumulative Reward :  -19 | Epsilon: 0.240 | Loss: 0.004624 | Random: 264 | Greedy: 875
+Episode :  143 | Cumulative Reward :  -20 | Epsilon: 0.238 | Loss: 0.001894 | Random: 310 | Greedy: 1029
+Episode :  144 | Cumulative Reward :  -18 | Epsilon: 0.235 | Loss: 0.002639 | Random: 338 | Greedy: 1111
+Episode :  145 | Cumulative Reward :  -19 | Epsilon: 0.233 | Loss: 0.001563 | Random: 302 | Greedy: 947
+Episode :  146 | Cumulative Reward :  -17 | Epsilon: 0.231 | Loss: 0.000536 | Random: 323 | Greedy: 1133
+Episode :  147 | Cumulative Reward :  -18 | Epsilon: 0.228 | Loss: 0.002653 | Random: 292 | Greedy: 1072
+Episode :  148 | Cumulative Reward :  -19 | Epsilon: 0.226 | Loss: 0.000468 | Random: 275 | Greedy: 1092
+Episode :  149 | Cumulative Reward :  -18 | Epsilon: 0.224 | Loss: 0.003226 | Random: 376 | Greedy: 1190
+Target Network Updated!
+Episode :  150 | Cumulative Reward :  -19 | Epsilon: 0.221 | Loss: 0.000724 | Random: 343 | Greedy: 1133
+Episode :  151 | Cumulative Reward :  -18 | Epsilon: 0.219 | Loss: 0.003970 | Random: 313 | Greedy: 1101
+Episode :  152 | Cumulative Reward :  -20 | Epsilon: 0.217 | Loss: 0.001613 | Random: 288 | Greedy: 1051
+Episode :  153 | Cumulative Reward :  -19 | Epsilon: 0.215 | Loss: 0.000930 | Random: 288 | Greedy: 1099
+Episode :  154 | Cumulative Reward :  -15 | Epsilon: 0.213 | Loss: 0.000604 | Random: 381 | Greedy: 1331
+Episode :  155 | Cumulative Reward :  -20 | Epsilon: 0.211 | Loss: 0.001841 | Random: 269 | Greedy: 1043
+Episode :  156 | Cumulative Reward :  -16 | Epsilon: 0.208 | Loss: 0.000843 | Random: 409 | Greedy: 1482
+Episode :  157 | Cumulative Reward :  -18 | Epsilon: 0.206 | Loss: 0.001034 | Random: 290 | Greedy: 1160
+Episode :  158 | Cumulative Reward :  -15 | Epsilon: 0.204 | Loss: 0.000942 | Random: 390 | Greedy: 1530
+Episode :  159 | Cumulative Reward :  -20 | Epsilon: 0.202 | Loss: 0.001820 | Random: 282 | Greedy: 1196
+Target Network Updated!
+Episode :  160 | Cumulative Reward :  -20 | Epsilon: 0.200 | Loss: 0.001146 | Random: 233 | Greedy: 1043
+Episode :  161 | Cumulative Reward :  -17 | Epsilon: 0.198 | Loss: 0.002971 | Random: 338 | Greedy: 1436
+Episode :  162 | Cumulative Reward :  -18 | Epsilon: 0.196 | Loss: 0.001318 | Random: 322 | Greedy: 1264
+Episode :  163 | Cumulative Reward :  -18 | Epsilon: 0.194 | Loss: 0.001779 | Random: 312 | Greedy: 1285
+Episode :  164 | Cumulative Reward :  -16 | Epsilon: 0.192 | Loss: 0.003888 | Random: 346 | Greedy: 1382
+Episode :  165 | Cumulative Reward :  -17 | Epsilon: 0.190 | Loss: 0.001919 | Random: 343 | Greedy: 1459
+Episode :  166 | Cumulative Reward :  -16 | Epsilon: 0.189 | Loss: 0.001245 | Random: 309 | Greedy: 1367
+Episode :  167 | Cumulative Reward :  -17 | Epsilon: 0.187 | Loss: 0.002071 | Random: 284 | Greedy: 1368
+Episode :  168 | Cumulative Reward :  -17 | Epsilon: 0.185 | Loss: 0.001011 | Random: 346 | Greedy: 1633
+Episode :  169 | Cumulative Reward :  -18 | Epsilon: 0.183 | Loss: 0.001142 | Random: 303 | Greedy: 1395
+Target Network Updated!
+Episode :  170 | Cumulative Reward :  -15 | Epsilon: 0.181 | Loss: 0.002240 | Random: 378 | Greedy: 1694
+Episode :  171 | Cumulative Reward :  -16 | Epsilon: 0.179 | Loss: 0.007384 | Random: 255 | Greedy: 1173
+Episode :  172 | Cumulative Reward :  -13 | Epsilon: 0.178 | Loss: 0.003466 | Random: 330 | Greedy: 1528
+Episode :  173 | Cumulative Reward :  -19 | Epsilon: 0.176 | Loss: 0.001130 | Random: 229 | Greedy: 1001
+Episode :  174 | Cumulative Reward :  -17 | Epsilon: 0.174 | Loss: 0.001150 | Random: 397 | Greedy: 1742
+Episode :  175 | Cumulative Reward :  -17 | Epsilon: 0.172 | Loss: 0.001376 | Random: 284 | Greedy: 1454
+Episode :  176 | Cumulative Reward :  -16 | Epsilon: 0.171 | Loss: 0.001619 | Random: 396 | Greedy: 1830
+Episode :  177 | Cumulative Reward :  -20 | Epsilon: 0.169 | Loss: 0.002858 | Random: 229 | Greedy: 1143
+Episode :  178 | Cumulative Reward :  -16 | Epsilon: 0.167 | Loss: 0.002632 | Random: 299 | Greedy: 1643
+Episode :  179 | Cumulative Reward :  -17 | Epsilon: 0.165 | Loss: 0.004195 | Random: 308 | Greedy: 1516
+Target Network Updated!
+Episode :  180 | Cumulative Reward :  -15 | Epsilon: 0.164 | Loss: 0.003417 | Random: 262 | Greedy: 1396
+Episode :  181 | Cumulative Reward :  -19 | Epsilon: 0.162 | Loss: 0.005413 | Random: 245 | Greedy: 1106
+Episode :  182 | Cumulative Reward :  -17 | Epsilon: 0.161 | Loss: 0.002876 | Random: 295 | Greedy: 1573
+Episode :  183 | Cumulative Reward :  -16 | Epsilon: 0.159 | Loss: 0.001383 | Random: 269 | Greedy: 1402
+Episode :  184 | Cumulative Reward :  -18 | Epsilon: 0.157 | Loss: 0.001395 | Random: 229 | Greedy: 1248
+Episode :  185 | Cumulative Reward :  -20 | Epsilon: 0.156 | Loss: 0.002218 | Random: 232 | Greedy: 1263
+Episode :  186 | Cumulative Reward :  -19 | Epsilon: 0.154 | Loss: 0.004186 | Random: 236 | Greedy: 1175
+Episode :  187 | Cumulative Reward :  -18 | Epsilon: 0.153 | Loss: 0.001191 | Random: 255 | Greedy: 1515
+Episode :  188 | Cumulative Reward :  -18 | Epsilon: 0.151 | Loss: 0.001569 | Random: 286 | Greedy: 1420
+Episode :  189 | Cumulative Reward :  -14 | Epsilon: 0.150 | Loss: 0.000997 | Random: 281 | Greedy: 1628
+Target Network Updated!
+Episode :  190 | Cumulative Reward :  -15 | Epsilon: 0.148 | Loss: 0.001122 | Random: 283 | Greedy: 1742
+Episode :  191 | Cumulative Reward :  -16 | Epsilon: 0.147 | Loss: 0.004154 | Random: 301 | Greedy: 1743
+Episode :  192 | Cumulative Reward :  -18 | Epsilon: 0.145 | Loss: 0.001846 | Random: 285 | Greedy: 1638
+Episode :  193 | Cumulative Reward :  -16 | Epsilon: 0.144 | Loss: 0.000973 | Random: 234 | Greedy: 1547
+Episode :  194 | Cumulative Reward :  -16 | Epsilon: 0.142 | Loss: 0.001767 | Random: 276 | Greedy: 1716
+Episode :  195 | Cumulative Reward :  -18 | Epsilon: 0.141 | Loss: 0.001285 | Random: 232 | Greedy: 1475
+Episode :  196 | Cumulative Reward :  -20 | Epsilon: 0.139 | Loss: 0.003423 | Random: 220 | Greedy: 1292
+Episode :  197 | Cumulative Reward :  -17 | Epsilon: 0.138 | Loss: 0.002039 | Random: 244 | Greedy: 1483
+Episode :  198 | Cumulative Reward :  -17 | Epsilon: 0.137 | Loss: 0.001509 | Random: 232 | Greedy: 1506
+Episode :  199 | Cumulative Reward :  -15 | Epsilon: 0.135 | Loss: 0.000921 | Random: 270 | Greedy: 1644
+Target Network Updated!
+Episode :  200 | Cumulative Reward :  -18 | Epsilon: 0.134 | Loss: 0.000969 | Random: 231 | Greedy: 1361
+Episode :  201 | Cumulative Reward :  -17 | Epsilon: 0.133 | Loss: 0.015476 | Random: 261 | Greedy: 1534
+Episode :  202 | Cumulative Reward :  -17 | Epsilon: 0.131 | Loss: 0.000763 | Random: 236 | Greedy: 1588
+Episode :  203 | Cumulative Reward :  -17 | Epsilon: 0.130 | Loss: 0.001036 | Random: 219 | Greedy: 1438
+Episode :  204 | Cumulative Reward :  -19 | Epsilon: 0.129 | Loss: 0.005544 | Random: 159 | Greedy: 1155
+Episode :  205 | Cumulative Reward :  -18 | Epsilon: 0.127 | Loss: 0.006347 | Random: 230 | Greedy: 1435
+Episode :  206 | Cumulative Reward :  -18 | Epsilon: 0.126 | Loss: 0.003922 | Random: 235 | Greedy: 1712
+Episode :  207 | Cumulative Reward :  -17 | Epsilon: 0.125 | Loss: 0.000596 | Random: 247 | Greedy: 1651
+Episode :  208 | Cumulative Reward :  -19 | Epsilon: 0.124 | Loss: 0.001915 | Random: 191 | Greedy: 1349
+Episode :  209 | Cumulative Reward :  -20 | Epsilon: 0.122 | Loss: 0.002385 | Random: 201 | Greedy: 1399
+Target Network Updated!
+Episode :  210 | Cumulative Reward :  -20 | Epsilon: 0.121 | Loss: 0.001268 | Random: 181 | Greedy: 1373
+Episode :  211 | Cumulative Reward :  -18 | Epsilon: 0.120 | Loss: 0.002833 | Random: 184 | Greedy: 1401
+Episode :  212 | Cumulative Reward :  -20 | Epsilon: 0.119 | Loss: 0.001278 | Random: 204 | Greedy: 1344
+Episode :  213 | Cumulative Reward :  -16 | Epsilon: 0.118 | Loss: 0.002613 | Random: 235 | Greedy: 1851
+Episode :  214 | Cumulative Reward :  -18 | Epsilon: 0.116 | Loss: 0.002856 | Random: 225 | Greedy: 1789
+Episode :  215 | Cumulative Reward :  -20 | Epsilon: 0.115 | Loss: 0.001094 | Random: 210 | Greedy: 1500
+Episode :  216 | Cumulative Reward :  -20 | Epsilon: 0.114 | Loss: 0.002039 | Random: 177 | Greedy: 1364
+Episode :  217 | Cumulative Reward :  -18 | Epsilon: 0.113 | Loss: 0.001403 | Random: 199 | Greedy: 1687
+Episode :  218 | Cumulative Reward :  -17 | Epsilon: 0.112 | Loss: 0.006834 | Random: 187 | Greedy: 1539
+Episode :  219 | Cumulative Reward :  -16 | Epsilon: 0.111 | Loss: 0.000892 | Random: 166 | Greedy: 1497
+Target Network Updated!
+Episode :  220 | Cumulative Reward :  -15 | Epsilon: 0.110 | Loss: 0.001561 | Random: 185 | Greedy: 1616
+Episode :  221 | Cumulative Reward :  -18 | Epsilon: 0.108 | Loss: 0.002949 | Random: 165 | Greedy: 1400
+Episode :  222 | Cumulative Reward :  -17 | Epsilon: 0.107 | Loss: 0.002590 | Random: 210 | Greedy: 1730
+Episode :  223 | Cumulative Reward :  -18 | Epsilon: 0.106 | Loss: 0.002189 | Random: 204 | Greedy: 1552
+Episode :  224 | Cumulative Reward :  -17 | Epsilon: 0.105 | Loss: 0.002978 | Random: 184 | Greedy: 1472
+Episode :  225 | Cumulative Reward :  -17 | Epsilon: 0.104 | Loss: 0.001291 | Random: 220 | Greedy: 1827
+Episode :  226 | Cumulative Reward :  -16 | Epsilon: 0.103 | Loss: 0.002735 | Random: 162 | Greedy: 1550
+Episode :  227 | Cumulative Reward :  -13 | Epsilon: 0.102 | Loss: 0.000873 | Random: 225 | Greedy: 2051
+Episode :  228 | Cumulative Reward :  -15 | Epsilon: 0.101 | Loss: 0.000710 | Random: 205 | Greedy: 1791
+Episode :  229 | Cumulative Reward :  -20 | Epsilon: 0.100 | Loss: 0.001859 | Random: 155 | Greedy: 1386
+Target Network Updated!
+Episode :  230 | Cumulative Reward :  -16 | Epsilon: 0.099 | Loss: 0.002549 | Random: 167 | Greedy: 1581
+Episode :  231 | Cumulative Reward :  -19 | Epsilon: 0.098 | Loss: 0.002299 | Random: 154 | Greedy: 1552
+Episode :  232 | Cumulative Reward :  -18 | Epsilon: 0.097 | Loss: 0.001447 | Random: 120 | Greedy: 1242
+Episode :  233 | Cumulative Reward :  -19 | Epsilon: 0.096 | Loss: 0.001103 | Random: 167 | Greedy: 1536
+Episode :  234 | Cumulative Reward :  -19 | Epsilon: 0.095 | Loss: 0.001060 | Random: 123 | Greedy: 1233
+Episode :  235 | Cumulative Reward :  -17 | Epsilon: 0.094 | Loss: 0.001281 | Random: 149 | Greedy: 1639
+Episode :  236 | Cumulative Reward :  -18 | Epsilon: 0.093 | Loss: 0.001425 | Random: 127 | Greedy: 1301
+Episode :  237 | Cumulative Reward :  -15 | Epsilon: 0.092 | Loss: 0.001234 | Random: 180 | Greedy: 1617
+Episode :  238 | Cumulative Reward :  -17 | Epsilon: 0.091 | Loss: 0.000820 | Random: 122 | Greedy: 1273
+Episode :  239 | Cumulative Reward :  -17 | Epsilon: 0.091 | Loss: 0.001741 | Random: 139 | Greedy: 1487
+Target Network Updated!
+Episode :  240 | Cumulative Reward :  -20 | Epsilon: 0.090 | Loss: 0.001981 | Random: 93 | Greedy: 1007
+Episode :  241 | Cumulative Reward :  -19 | Epsilon: 0.089 | Loss: 0.002719 | Random: 148 | Greedy: 1330
+Episode :  242 | Cumulative Reward :  -16 | Epsilon: 0.088 | Loss: 0.000743 | Random: 155 | Greedy: 1792
+Episode :  243 | Cumulative Reward :  -17 | Epsilon: 0.087 | Loss: 0.000910 | Random: 169 | Greedy: 1780
+Episode :  244 | Cumulative Reward :  -19 | Epsilon: 0.086 | Loss: 0.002088 | Random: 154 | Greedy: 1766
+Episode :  245 | Cumulative Reward :  -14 | Epsilon: 0.085 | Loss: 0.000936 | Random: 182 | Greedy: 2028
+Episode :  246 | Cumulative Reward :  -15 | Epsilon: 0.084 | Loss: 0.001799 | Random: 165 | Greedy: 1727
+Episode :  247 | Cumulative Reward :  -18 | Epsilon: 0.084 | Loss: 0.000949 | Random: 149 | Greedy: 1781
+Episode :  248 | Cumulative Reward :  -17 | Epsilon: 0.083 | Loss: 0.002312 | Random: 137 | Greedy: 1375
+Episode :  249 | Cumulative Reward :  -15 | Epsilon: 0.082 | Loss: 0.003566 | Random: 155 | Greedy: 2047
+Target Network Updated!
+Episode :  250 | Cumulative Reward :  -16 | Epsilon: 0.081 | Loss: 0.001153 | Random: 145 | Greedy: 1820
+Episode :  251 | Cumulative Reward :  -16 | Epsilon: 0.080 | Loss: 0.009625 | Random: 140 | Greedy: 1552
+Episode :  252 | Cumulative Reward :  -17 | Epsilon: 0.079 | Loss: 0.001464 | Random: 124 | Greedy: 1536
+Episode :  253 | Cumulative Reward :  -20 | Epsilon: 0.079 | Loss: 0.002378 | Random: 118 | Greedy: 1468
+Episode :  254 | Cumulative Reward :  -14 | Epsilon: 0.078 | Loss: 0.002184 | Random: 172 | Greedy: 1845
+Episode :  255 | Cumulative Reward :  -19 | Epsilon: 0.077 | Loss: 0.003122 | Random: 114 | Greedy: 1332
+Traceback (most recent call last):
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DQN/train_DQN.py", line 141, in <module>
+    agent.update(*sampled_exps)
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DQN/vanilla_DQN.py", line 49, in update
+    loss.backward()
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/torch/_tensor.py", line 255, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/jungwoo/anaconda3/envs/torch/lib/python3.8/site-packages/torch/autograd/__init__.py", line 147, in backward
+    Variable._execution_engine.run_backward(
+KeyboardInterrupt
