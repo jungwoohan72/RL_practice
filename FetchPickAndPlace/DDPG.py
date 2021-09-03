@@ -21,32 +21,30 @@ class DDPG(nn.Module):
         self.q_optim = optim.Adam(self.qnet.parameters(), lr = lr_q)
         self.mu_optim = optim.Adam(self.munet.parameters(), lr = lr_mu)
 
-    def train(self, memory, batch_size):
-        s,a,r,s_prime,done = memory.sample(batch_size)
-
-        # torch size: (batch_size, state_dim), (batch_size, action_dim), (batch_size, 1), (batch_size, state_dim), (batch_size, 1)
-
-        with torch.no_grad():
-            target = r + self.gamma*self.q_target(s_prime, self.mu_target(s_prime))*(1-done)
-
-        q_loss = (self.qnet(s,a) - target.detach()).pow(2).mean()
-
-        self.q_optim.zero_grad()
-        print(0)
-        q_loss.backward()
-
-        print(1)
-        mu_loss = -self.qnet(s,self.munet(s)).mean()
-
-        self.mu_optim.zero_grad()
-        mu_loss.backward()
-
-        self.q_optim.step()
-        self.mu_optim.step()
-
     def soft_update(self, net, target):
         for param_target, param in zip(target.parameters(), net.parameters()):
             param_target.data.copy_(param_target.data * (1.0 - self.tau) + param.data * self.tau)
+
+    def train(self, memory, batch_size):
+        s,a,r,s_prime,done = memory.sample(batch_size)
+
+        # print(s.shape, a.shape, r.shape, s_prime.shape, done.shape)
+        # torch size: (batch_size, state_dim), (batch_size, action_dim), (batch_size, 1), (batch_size, state_dim), (batch_size, 1)
+
+        self.q_optim.zero_grad()
+        target = r + self.gamma*self.q_target(s_prime, self.mu_target(s_prime))*(1-done)
+        q_loss = (self.qnet(s,a) - target.detach()).pow(2).mean()
+        q_loss.backward(inputs=list(self.qnet.parameters())) # I don't know why inplace error occurs here without inputs argument!!!
+        self.q_optim.step()
+
+        mu_loss = -self.qnet(s,self.munet(s))
+        mu_loss = mu_loss.mean()
+        self.mu_optim.zero_grad()
+        mu_loss.backward()
+        self.mu_optim.step()
+
+        self.soft_update(self.qnet, self.q_target)
+        self.soft_update(self.munet, self.mu_target)
 
 class OrnsteinUhlenbeckNoise:
     def __init__(self, mu):

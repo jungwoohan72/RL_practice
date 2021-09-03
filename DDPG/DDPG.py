@@ -86,6 +86,7 @@ class OrnsteinUhlenbeckNoise:
 def train(mu, mu_target, q, q_target, memory, q_optimizer, mu_optimizer):
     s,a,r,s_prime,done_mask  = memory.sample(batch_size)
 
+    # print(s.shape, a.shape, r.shape,s_prime.shape, done_mask.shape)
     target = r + gamma * q_target(s_prime, mu_target(s_prime)) * done_mask
     q_loss = F.smooth_l1_loss(q(s,a), target.detach())
     q_optimizer.zero_grad()

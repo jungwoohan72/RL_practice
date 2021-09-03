@@ -18,7 +18,8 @@ def main():
     lr_q = 0.001
     gamma = 0.99
     tau = 0.005
-    print_interval = 100
+    print_interval = 20
+    max_step = 10000
 
     env = gym.make('BipedalWalkerHardcore-v3')
 
@@ -42,31 +43,32 @@ def main():
     agent = DDPG(q, q_target, mu, mu_target, lr_mu, lr_q, gamma, tau)
     ou_noise = OrnsteinUhlenbeckNoise(mu=np.zeros(4))
 
+    score = 0.0
+
     for n_epi in range(10000):
         s = env.reset()
-        done = False
 
-        score = 0.0
-
-        while not done:
+        for step in range(max_step):
+            if n_epi % 100 == 0:
+                env.render()
             s = torch.from_numpy(s).float().to(device)
             a = agent.munet(s)
 
-            s_prime, r, done, info = env.step(a.cpu().detach().numpy()+ou_noise())
-            memory.put((s.unsqueeze(0), a.unsqueeze(0), torch.tensor(r/100.0).view(1,1), torch.from_numpy(s_prime).float().unsqueeze(0), torch.tensor(done).view(1,1)))
+            s_prime, r, done, info = env.step(a.cpu().detach().numpy()+ou_noise()) # 보통은 a.item()을 해서 넣기 때문에 cpu().detach().numpy() 안하는 듯
+            memory.put((s.unsqueeze(0), a.unsqueeze(0), torch.tensor(r).view(1,1), torch.from_numpy(s_prime).float().unsqueeze(0), torch.tensor(done).view(1,1)))
             score += r
             s = s_prime
 
+            if done:
+                break
+
         if memory.size()>2000:
             for i in range(10):
-                with torch.autograd.set_detect_anomaly(True):
-                    agent.train(memory, batch_size)
-                    print("train")
-                agent.soft_update(agent.qnet, agent.q_target)
-                agent.soft_update(agent.munet, agent.mu_target)
+                agent.train(memory, batch_size)
 
         if n_epi % print_interval == 0:
-            print("Episode: {}, Score: {:.1f}".format(n_epi, score))
+            print("Episode: {}, Score: {:.1f}".format(n_epi, score/print_interval))
+            score = 0.0
 
     env.close()
 
