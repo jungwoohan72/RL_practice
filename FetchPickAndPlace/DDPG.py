@@ -19,7 +19,7 @@ class DDPG(nn.Module):
         self.gamma = gamma
         self.tau = tau
         self.q_optim = optim.Adam(self.qnet.parameters(), lr = lr_q)
-        self.mu_optim = optim.Adam(self.munet.parameters(), lr = lr_mu)
+        self.mu_optim = optim.Adam(self.munet.parameters(), lr = lr_mu, weight_decay=0.01)
 
     def soft_update(self, net, target):
         for param_target, param in zip(target.parameters(), net.parameters()):
@@ -31,10 +31,11 @@ class DDPG(nn.Module):
         # print(s.shape, a.shape, r.shape, s_prime.shape, done.shape)
         # torch size: (batch_size, state_dim), (batch_size, action_dim), (batch_size, 1), (batch_size, state_dim), (batch_size, 1)
 
-        self.q_optim.zero_grad()
-        target = r + self.gamma*self.q_target(s_prime, self.mu_target(s_prime))*(1-done)
+        with torch.no_grad():
+            target = r + self.gamma*self.q_target(s_prime, self.mu_target(s_prime))*(1-done)
         q_loss = (self.qnet(s,a) - target.detach()).pow(2).mean()
-        q_loss.backward(inputs=list(self.qnet.parameters())) # I don't know why inplace error occurs here without inputs argument!!!
+        self.q_optim.zero_grad()
+        q_loss.backward() # I don't know why inplace error occurs here without inputs argument!!!
         self.q_optim.step()
 
         mu_loss = -self.qnet(s,self.munet(s))

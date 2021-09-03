@@ -18,15 +18,15 @@ class ReplayBuffer():
             s, a, r, s_prime, done = transition
             s_lst.append(s)
             a_lst.append(a)
-            r_lst.append(r)
+            r_lst.append([r])
             s_prime_lst.append(s_prime)
-            done_mask_lst.append(done)
+            done_mask_lst.append([done])
 
-        states = torch.cat(s_lst, dim=0).float().to(self.device)
-        actions = torch.cat(a_lst, dim=0).to(self.device)
-        rewards = torch.cat(r_lst, dim=0).float().to(self.device)
-        next_states = torch.cat(s_prime_lst, dim=0).float().to(self.device)
-        dones = torch.cat(done_mask_lst, dim=0).float().to(self.device)
+        states = torch.tensor(s_lst).float().to(self.device)
+        actions = torch.tensor(a_lst).float().to(self.device)
+        rewards = torch.tensor(r_lst).float().to(self.device)
+        next_states = torch.tensor(s_prime_lst).float().to(self.device)
+        dones = torch.tensor(done_mask_lst).float().to(self.device)
 
         return states, actions, rewards, next_states, dones
 

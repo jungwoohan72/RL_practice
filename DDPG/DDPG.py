@@ -128,6 +128,8 @@ def main():
         done = False
 
         while not done:
+            if n_epi % 100 == 0:
+                env.render()
             a = mu(torch.from_numpy(s).float())
             a = a.item() + ou_noise()[0]
             s_prime, r, done, info = env.step([a])

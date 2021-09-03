@@ -21,7 +21,8 @@ def main():
     print_interval = 20
     max_step = 10000
 
-    env = gym.make('BipedalWalkerHardcore-v3')
+    # env = gym.make('BipedalWalker-v3')
+    env = gym.make('Pendulum-v0')
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(device)
@@ -30,18 +31,18 @@ def main():
     a_dim = env.action_space.shape[0]
 
     print("Observation dimension:", s_dim, "\nAction dimension: ", a_dim)
-    print("Action range: -1 to 1")
+    print("Action range: ", env.action_space.low, " to ", env.action_space.high)
 
     memory = ReplayBuffer(buffer_limit=50000, device = device)
 
-    q, q_target = Qnet(s_dim, a_dim).to(device), Qnet(s_dim, a_dim).to(device)
-    mu, mu_target = mu_net(s_dim, a_dim).to(device), mu_net(s_dim, a_dim).to(device)
+    q, q_target = Qnet(s_dim, env.action_space, l1_channel = 128, l2_channel = 64).to(device), Qnet(s_dim, env.action_space, l1_channel = 128, l2_channel = 64).to(device)
+    mu, mu_target = mu_net(s_dim, env.action_space, l1_channel = 128, l2_channel = 64).to(device), mu_net(s_dim, env.action_space, l1_channel = 128, l2_channel = 64).to(device)
 
     q_target.load_state_dict(q.state_dict())
     mu_target.load_state_dict(mu.state_dict())
 
     agent = DDPG(q, q_target, mu, mu_target, lr_mu, lr_q, gamma, tau)
-    ou_noise = OrnsteinUhlenbeckNoise(mu=np.zeros(4))
+    ou_noise = OrnsteinUhlenbeckNoise(mu=np.zeros(env.action_space.shape[0]))
 
     score = 0.0
 
@@ -51,11 +52,10 @@ def main():
         for step in range(max_step):
             if n_epi % 100 == 0:
                 env.render()
-            s = torch.from_numpy(s).float().to(device)
-            a = agent.munet(s)
+            a = agent.munet(torch.from_numpy(s).float().to(device)).cpu().detach().numpy()
 
-            s_prime, r, done, info = env.step(a.cpu().detach().numpy()+ou_noise()) # 보통은 a.item()을 해서 넣기 때문에 cpu().detach().numpy() 안하는 듯
-            memory.put((s.unsqueeze(0), a.unsqueeze(0), torch.tensor(r).view(1,1), torch.from_numpy(s_prime).float().unsqueeze(0), torch.tensor(done).view(1,1)))
+            s_prime, r, done, info = env.step(a+ou_noise()) # 보통은 a.item()을 해서 넣기 때문에 cpu().detach().numpy() 안하는 듯
+            memory.put((s, a, r, s_prime, done))
             score += r
             s = s_prime
 
