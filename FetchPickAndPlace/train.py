@@ -55,7 +55,7 @@ def main():
             a = agent.munet(torch.from_numpy(s).float().to(device)).cpu().detach().numpy()
 
             s_prime, r, done, info = env.step(a+ou_noise()) # 보통은 a.item()을 해서 넣기 때문에 cpu().detach().numpy() 안하는 듯
-            memory.put((s, a, r, s_prime, done))
+            memory.put((s, a, r/100.0, s_prime, done))
             score += r
             s = s_prime
 

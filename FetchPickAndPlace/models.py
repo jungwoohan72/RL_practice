@@ -12,8 +12,9 @@ import numpy as np
 class Qnet(nn.Module):
     def __init__(self, observation_dim, action_space, l1_channel = 256, l2_channel = 128):
         super(Qnet, self).__init__()
-        self.fc_s = nn.Linear(observation_dim, l1_channel)
-        self.fc_a = nn.Linear(l1_channel + action_space.shape[0], l2_channel)
+        self.fc_s = nn.Linear(observation_dim, int(l1_channel/2))
+        self.fc_a = nn.Linear(action_space.shape[0], int(l1_channel/2))
+        self.fc_q = nn.Linear(l1_channel, l2_channel)
         self.fc_out = nn.Linear(l2_channel, 1)
 
         # f1 = 1./np.sqrt(self.fc_s.weight.data.size()[0])
@@ -30,9 +31,10 @@ class Qnet(nn.Module):
 
     def forward(self, x, a):
         h1 = F.relu(self.fc_s(x))
-        h2 = F.relu(self.fc_a(torch.cat([h1,a],dim=1)))
-        q = F.relu(self.fc_out(h2))
-        return q
+        h2 = F.relu(self.fc_a(a))
+        q = F.relu(self.fc_q(torch.cat([h1,h2],dim=1)))
+        out = self.fc_out(q)
+        return out
 
 class mu_net(nn.Module):
     def __init__(self, observation_dim, action_space, l1_channel = 256, l2_channel = 128):

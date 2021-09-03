@@ -31,11 +31,10 @@ class DDPG(nn.Module):
         # print(s.shape, a.shape, r.shape, s_prime.shape, done.shape)
         # torch size: (batch_size, state_dim), (batch_size, action_dim), (batch_size, 1), (batch_size, state_dim), (batch_size, 1)
 
-        with torch.no_grad():
-            target = r + self.gamma*self.q_target(s_prime, self.mu_target(s_prime))*(1-done)
-        q_loss = (self.qnet(s,a) - target.detach()).pow(2).mean()
+        target = r + self.gamma*self.q_target(s_prime, self.mu_target(s_prime))*(1-done)
+        q_loss = F.smooth_l1_loss(self.qnet(s,a), target.detach())
         self.q_optim.zero_grad()
-        q_loss.backward() # I don't know why inplace error occurs here without inputs argument!!!
+        q_loss.backward() # 여기서 inplace 에러 엄청 났는데, 전처리를 다시 깔끔하게 했더니 해결... ㄷㄷ
         self.q_optim.step()
 
         mu_loss = -self.qnet(s,self.munet(s))
