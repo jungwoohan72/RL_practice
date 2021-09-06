@@ -16,5 +16,6 @@
     <orderEntry type="module" module-name="VRP_DRL_MHA" />
     <orderEntry type="module" module-name="DHC" />
     <orderEntry type="library" name="Python 3.8 (torch) interpreter library" level="application" />
+    <orderEntry type="module" module-name="MAGIC" />
   </component>
 </module>

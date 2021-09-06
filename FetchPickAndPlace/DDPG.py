@@ -19,7 +19,7 @@ class DDPG(nn.Module):
         self.gamma = gamma
         self.tau = tau
         self.q_optim = optim.Adam(self.qnet.parameters(), lr = lr_q)
-        self.mu_optim = optim.Adam(self.munet.parameters(), lr = lr_mu, weight_decay=0.01)
+        self.mu_optim = optim.Adam(self.munet.parameters(), lr = lr_mu)
 
     def soft_update(self, net, target):
         for param_target, param in zip(target.parameters(), net.parameters()):
@@ -37,8 +37,7 @@ class DDPG(nn.Module):
         q_loss.backward() # 여기서 inplace 에러 엄청 났는데, 전처리를 다시 깔끔하게 했더니 해결... ㄷㄷ
         self.q_optim.step()
 
-        mu_loss = -self.qnet(s,self.munet(s))
-        mu_loss = mu_loss.mean()
+        mu_loss = -self.qnet(s,self.munet(s)).mean()
         self.mu_optim.zero_grad()
         mu_loss.backward()
         self.mu_optim.step()
