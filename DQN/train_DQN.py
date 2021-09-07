@@ -9,6 +9,8 @@ import gym
 import math
 import json
 
+import matplotlib.pyplot as plt
+
 from Preprocessing import preprocess_image, prepare_training_inputs, stack_frame
 
 import numpy as np
