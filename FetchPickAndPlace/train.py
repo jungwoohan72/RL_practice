@@ -1,3 +1,5 @@
+import sys; sys.path.append('..')
+
 import gym
 import random
 import collections
@@ -135,9 +137,9 @@ def main():
 
     memory = ReplayBuffer(device = device)
 
-    q, q_target = QNet(s_dim, env.action_space).to(device), QNet(s_dim, env.action_space).to(device)
+    q, q_target = QNet(s_dim, env.action_space, l1_channel = 400, l2_channel = 300).to(device), QNet(s_dim, env.action_space, l1_channel = 400, l2_channel = 300).to(device)
     q_target.load_state_dict(q.state_dict())
-    mu, mu_target = MuNet(s_dim, env.action_space).to(device), MuNet(s_dim, env.action_space).to(device)
+    mu, mu_target = MuNet(s_dim, env.action_space, l1_channel = 400, l2_channel = 300).to(device), MuNet(s_dim, env.action_space, l1_channel = 400, l2_channel = 300).to(device)
     mu_target.load_state_dict(mu.state_dict())
 
     score = 0.0
@@ -178,9 +180,13 @@ def main():
             log_dict['20_epi_avg_return'] = score/print_interval
             score = 0.0
 
+        if n_epi % 1000 == 0:
+            torch.save(q.state_dict(), ''.join((wandb.run.dir, '_model_' + str(n_epi) + '.pt')))
+
         log_dict['ep_return'] = ep_score
         wandb.log(log_dict)
 
+    torch.save(q.state_dict(), ''.join((wandb.run.dir, '_model_final.pt')))
     env.close()
 
 if __name__ == '__main__':
@@ -208,7 +214,6 @@ if __name__ == '__main__':
     main()
 
     json_val = json.dumps(config)
-    with open(join(wandb.run.dir, 'config.json'), 'w') as f:
+    with open(''.join((wandb.run.dir, 'config.json')), 'w') as f:
         json.dump(json_val, f)
 
-    torch.save(q.state_dict(), join(wandb.run.dir, 'model.pt'))
