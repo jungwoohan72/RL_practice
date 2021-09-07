@@ -138,9 +138,9 @@ def main():
         save_flag = 1000
         env = gym.make('BipedalWalker-v3')
     elif config["env"] == "MountainCar":
-        max_ep_length = 200
+        max_ep_length = 2000
         render_flag = 20
-        save_flag = 100
+        save_flag = 500
         env = gym.make('MountainCarContinuous-v0')
     elif config["env"] == "LunarLander":
         max_ep_length = 2000
@@ -227,7 +227,7 @@ if __name__ == '__main__':
 
     # env list: Pendulum BipedalWalker MountainCar LunarLander
     config = {
-        "env":"MountainCarContinuous",
+        "env":"MountainCar",
         "q_lr":lr_q,
         "mu_lr":lr_mu,
         "gamma":gamma,
@@ -235,7 +235,7 @@ if __name__ == '__main__':
         "batch_size":batch_size
     }
 
-    wandb.init(project='MountainCarContinuous-DDPG',
+    wandb.init(project='MountainCar-DDPG',
                config=config)
 
     main()

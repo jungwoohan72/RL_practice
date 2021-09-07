@@ -21,3 +21,139 @@ config: {'env': 'Pendulum', 'q_lr': 0.001, 'mu_lr': 0.0001, 'gamma': 0.99, 'tau'
 2021-09-07 19:26:36,474 INFO    MainThread:26644 [wandb_run.py:_redirect():1463] Redirecting console.
 2021-09-07 19:26:36,475 INFO    MainThread:26644 [wandb_run.py:_redirect():1519] Redirects installed.
 2021-09-07 19:26:36,475 INFO    MainThread:26644 [wandb_init.py:init():565] run started, returning control to user process
+2021-09-07 19:41:52,135 INFO    MainThread:26644 [wandb_run.py:_atexit_cleanup():1554] got exitcode: 0
+2021-09-07 19:41:52,136 INFO    MainThread:26644 [wandb_run.py:_restore():1526] restore
+2021-09-07 19:41:54,954 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 758
+  total_bytes: 758
+}
+
+2021-09-07 19:41:55,060 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 758
+  total_bytes: 758
+}
+
+2021-09-07 19:41:56,212 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 758
+  total_bytes: 758
+}
+
+2021-09-07 19:41:57,105 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 758
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:57,206 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 758
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:57,307 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 758
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:57,409 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 758
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:57,518 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 758
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:57,619 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9471
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:57,720 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9471
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:57,822 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9471
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:57,923 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9471
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:58,024 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9471
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:58,125 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9471
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:58,635 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9471
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:58,737 INFO    MainThread:26644 [wandb_run.py:_wait_for_finish():1676] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9471
+  total_bytes: 9471
+}
+
+2021-09-07 19:41:59,792 INFO    MainThread:26644 [wandb_run.py:_show_summary():1831] rendering summary
+2021-09-07 19:41:59,792 INFO    MainThread:26644 [wandb_run.py:_show_history():1869] rendering history
+2021-09-07 19:41:59,793 INFO    MainThread:26644 [wandb_run.py:_show_files():1898] logging synced files

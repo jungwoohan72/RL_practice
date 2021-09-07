@@ -1,1 +1,1 @@
-{"ep_return": -240.8800949699083, "_runtime": 706, "_timestamp": 1631011100, "_step": 776, "20_epi_avg_return": -233.68382224173}
+{"ep_return": -129.07246399895126, "_runtime": 918, "_timestamp": 1631011312, "_step": 999, "20_epi_avg_return": -176.92384648204683, "_wandb": {"runtime": 920}}

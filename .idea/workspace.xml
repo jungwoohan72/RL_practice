@@ -9,7 +9,26 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="" />
+    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21__8__31___2_54__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21__8__31__오후_2_54_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/debug-internal.log" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/debug-internal.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/latest-run" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/latest-run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192634-1fdwfui7/files/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192634-1fdwfui7/files/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192634-1fdwfui7/files/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192634-1fdwfui7/files/output.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192634-1fdwfui7/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192634-1fdwfui7/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192634-1fdwfui7/logs/debug-internal.log" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192634-1fdwfui7/logs/debug-internal.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192634-1fdwfui7/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192634-1fdwfui7/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192634-1fdwfui7/run-1fdwfui7.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192634-1fdwfui7/run-1fdwfui7.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/files/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/files/output.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/logs/debug-internal.log" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/logs/debug-internal.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/run-2m331w16.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/run-2m331w16.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +45,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../jungwoohan72.github.io" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -52,7 +71,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../A3C_RNN.ipynb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -200,6 +219,8 @@
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
       <workItem from="1629782385796" duration="8472000" />
+      <workItem from="1631011352818" duration="167000" />
+      <workItem from="1631012434209" duration="64000" />
     </task>
     <task id="LOCAL-00021" summary=".">
       <created>1628515262141</created>
