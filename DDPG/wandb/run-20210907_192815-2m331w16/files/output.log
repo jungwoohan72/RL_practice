@@ -1,0 +1,37 @@
+cuda
+State dim:  8 Action dim:  2
+# of episode :20, avg score : -310.0
+Train Starts!
+# of episode :40, avg score : -405.0
+# of episode :60, avg score : -342.9
+# of episode :80, avg score : -435.8
+# of episode :100, avg score : -299.3
+# of episode :120, avg score : -292.6
+# of episode :140, avg score : -390.8
+# of episode :160, avg score : -390.4
+# of episode :180, avg score : -252.8
+# of episode :200, avg score : -222.8
+# of episode :220, avg score : -145.5
+# of episode :240, avg score : -142.9
+# of episode :260, avg score : -163.6
+# of episode :280, avg score : -140.2
+# of episode :300, avg score : -159.8
+# of episode :320, avg score : -238.3
+# of episode :340, avg score : -177.0
+# of episode :360, avg score : -167.6
+# of episode :380, avg score : -170.4
+# of episode :400, avg score : -158.0
+# of episode :420, avg score : -226.7
+# of episode :440, avg score : -278.3
+# of episode :460, avg score : -219.9
+# of episode :480, avg score : -323.1
+# of episode :500, avg score : -297.4
+# of episode :520, avg score : -294.7
+# of episode :540, avg score : -239.7
+# of episode :560, avg score : -232.3
+# of episode :580, avg score : -196.3
+# of episode :600, avg score : -189.0
+# of episode :620, avg score : -201.6
+# of episode :640, avg score : -220.7
+# of episode :660, avg score : -184.2
+# of episode :680, avg score : -189.7

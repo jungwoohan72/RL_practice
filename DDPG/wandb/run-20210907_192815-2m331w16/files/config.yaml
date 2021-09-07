@@ -1,0 +1,36 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.0
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.10
+    start_time: 1631010495
+    t:
+      1:
+      - 1
+      4: 3.8.10
+      5: 0.12.0
+      8:
+      - 5
+batch_size:
+  desc: null
+  value: 64
+env:
+  desc: null
+  value: LunarLander
+gamma:
+  desc: null
+  value: 0.99
+mu_lr:
+  desc: null
+  value: 0.0001
+q_lr:
+  desc: null
+  value: 0.001
+tau:
+  desc: null
+  value: 0.001

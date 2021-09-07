@@ -7,69 +7,44 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 
-#Hyperparameters
-lr_mu        = 0.0005
-lr_q         = 0.001
-gamma        = 0.99
-batch_size   = 32
-buffer_limit = 50000
-tau          = 0.005 # for target network soft update
+class DDPG(nn.Module):
+    def __init__(self, q_net, q_target, mu_net, mu_target, lr_mu, lr_q, gamma, tau):
+        super(DDPG, self).__init__()
+        self.qnet = q_net
+        self.q_target = q_target
+        self.munet = mu_net
+        self.mu_target = mu_target
+        self.lr_mu = lr_mu
+        self.lr_q = lr_q
+        self.gamma = gamma
+        self.tau = tau
+        self.q_optim = optim.Adam(self.qnet.parameters(), lr = lr_q)
+        self.mu_optim = optim.Adam(self.munet.parameters(), lr = lr_mu, weight_decay=0.01)
 
-class ReplayBuffer():
-    def __init__(self):
-        self.buffer = collections.deque(maxlen=buffer_limit)
+    def soft_update(self, net, target):
+        for param_target, param in zip(target.parameters(), net.parameters()):
+            param_target.data.copy_(param_target.data * (1.0 - self.tau) + param.data * self.tau)
 
-    def put(self, transition):
-        self.buffer.append(transition)
+    def train(self, memory, batch_size):
+        s,a,r,s_prime,done = memory.sample(batch_size)
 
-    def sample(self, n):
-        mini_batch = random.sample(self.buffer, n)
-        s_lst, a_lst, r_lst, s_prime_lst, done_mask_lst = [], [], [], [], []
+        # print(s.shape, a.shape, r.shape, s_prime.shape, done.shape)
+        # torch size: (batch_size, state_dim), (batch_size, action_dim), (batch_size, 1), (batch_size, state_dim), (batch_size, 1)
 
-        for transition in mini_batch:
-            s, a, r, s_prime, done = transition
-            s_lst.append(s)
-            a_lst.append([a])
-            r_lst.append([r])
-            s_prime_lst.append(s_prime)
-            done_mask = 0.0 if done else 1.0
-            done_mask_lst.append([done_mask])
+        target = r + self.gamma*self.q_target(s_prime, self.mu_target(s_prime))*(1-done)
+        q_loss = F.smooth_l1_loss(self.qnet(s,a), target.detach())
+        self.q_optim.zero_grad()
+        q_loss.backward() # 여기서 inplace 에러 엄청 났는데, 전처리를 다시 깔끔하게 했더니 해결... ㄷㄷ
+        self.q_optim.step()
 
-        return torch.tensor(s_lst, dtype=torch.float), torch.tensor(a_lst, dtype=torch.float), \
-               torch.tensor(r_lst, dtype=torch.float), torch.tensor(s_prime_lst, dtype=torch.float), \
-               torch.tensor(done_mask_lst, dtype=torch.float)
+        mu_loss = -self.qnet(s,self.munet(s))
+        mu_loss = mu_loss.mean()
+        self.mu_optim.zero_grad()
+        mu_loss.backward()
+        self.mu_optim.step()
 
-    def size(self):
-        return len(self.buffer)
-
-class MuNet(nn.Module):
-    def __init__(self):
-        super(MuNet, self).__init__()
-        self.fc1 = nn.Linear(3, 128)
-        self.fc2 = nn.Linear(128, 64)
-        self.fc_mu = nn.Linear(64, 1)
-
-    def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        mu = torch.tanh(self.fc_mu(x))*2 # Multipled by 2 because the action space of the Pendulum-v0 is [-2,2]
-        return mu
-
-class QNet(nn.Module):
-    def __init__(self):
-        super(QNet, self).__init__()
-        self.fc_s = nn.Linear(3, 64)
-        self.fc_a = nn.Linear(1,64)
-        self.fc_q = nn.Linear(128, 32)
-        self.fc_out = nn.Linear(32,1)
-
-    def forward(self, x, a):
-        h1 = F.relu(self.fc_s(x))
-        h2 = F.relu(self.fc_a(a))
-        cat = torch.cat([h1,h2], dim=1)
-        q = F.relu(self.fc_q(cat))
-        q = self.fc_out(q)
-        return q
+        self.soft_update(self.qnet, self.q_target)
+        self.soft_update(self.munet, self.mu_target)
 
 class OrnsteinUhlenbeckNoise:
     def __init__(self, mu):
@@ -82,72 +57,3 @@ class OrnsteinUhlenbeckNoise:
             self.sigma * np.sqrt(self.dt) * np.random.normal(size=self.mu.shape)
         self.x_prev = x
         return x
-
-def train(mu, mu_target, q, q_target, memory, q_optimizer, mu_optimizer):
-    s,a,r,s_prime,done_mask  = memory.sample(batch_size)
-
-    # print(s.shape, a.shape, r.shape,s_prime.shape, done_mask.shape)
-    target = r + gamma * q_target(s_prime, mu_target(s_prime)) * done_mask
-    q_loss = F.smooth_l1_loss(q(s,a), target.detach())
-    q_optimizer.zero_grad()
-    q_loss.backward()
-    q_optimizer.step()
-
-    mu_loss = -q(s,mu(s)).mean() # That's all for the policy loss.
-    mu_optimizer.zero_grad()
-    mu_loss.backward()
-    mu_optimizer.step()
-
-def soft_update(net, net_target):
-    for param_target, param in zip(net_target.parameters(), net.parameters()):
-        param_target.data.copy_(param_target.data * (1.0 - tau) + param.data * tau)
-
-def main():
-    env = gym.make('Pendulum-v0')
-
-    s_dim = env.observation_space.shape[0]
-    a_dim = env.action_space.shape[0]
-    print("State dim: ", s_dim, "Action dim: ", a_dim)
-
-    memory = ReplayBuffer()
-
-    q, q_target = QNet(), QNet()
-    q_target.load_state_dict(q.state_dict())
-    mu, mu_target = MuNet(), MuNet()
-    mu_target.load_state_dict(mu.state_dict())
-
-    score = 0.0
-    print_interval = 20
-
-    mu_optimizer = optim.Adam(mu.parameters(), lr=lr_mu)
-    q_optimizer  = optim.Adam(q.parameters(), lr=lr_q)
-    ou_noise = OrnsteinUhlenbeckNoise(mu=np.zeros(1))
-
-    for n_epi in range(10000):
-        s = env.reset()
-        done = False
-
-        while not done:
-            if n_epi % 100 == 0:
-                env.render()
-            a = mu(torch.from_numpy(s).float())
-            a = a.item() + ou_noise()[0]
-            s_prime, r, done, info = env.step([a])
-            memory.put((s,a,r/100.0,s_prime,done))
-            score +=r
-            s = s_prime
-
-        if memory.size()>2000:
-            for i in range(10):
-                train(mu, mu_target, q, q_target, memory, q_optimizer, mu_optimizer)
-                soft_update(mu, mu_target)
-                soft_update(q,  q_target)
-
-        if n_epi%print_interval==0 and n_epi!=0:
-            print("# of episode :{}, avg score : {:.1f}".format(n_epi, score/print_interval))
-            score = 0.0
-
-    env.close()
-
-if __name__ == '__main__':
-    main()

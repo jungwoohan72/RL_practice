@@ -95,7 +95,7 @@ class QNet(nn.Module):
 
 class OrnsteinUhlenbeckNoise:
     def __init__(self, mu):
-        self.theta, self.dt, self.sigma = 0.1, 0.01, 0.1
+        self.theta, self.dt, self.sigma = 0.15, 0.01, 0.2
         self.mu = mu
         self.x_prev = np.zeros_like(self.mu)
 
@@ -109,8 +109,9 @@ def train(mu, mu_target, q, q_target, memory, q_optimizer, mu_optimizer):
     s,a,r,s_prime,done_mask  = memory.sample(batch_size)
 
     # print(s.shape, a.shape, r.shape,s_prime.shape, done_mask.shape)
-    target = r + gamma * q_target(s_prime, mu_target(s_prime)) * done_mask
-    q_loss = F.smooth_l1_loss(q(s,a), target.detach())
+    with torch.no_grad():
+        target = r + gamma * q_target(s_prime, mu_target(s_prime)) * done_mask
+    q_loss = F.mse_loss(q(s,a), target.detach())
     q_optimizer.zero_grad()
     q_loss.backward()
     q_optimizer.step()
@@ -125,8 +126,27 @@ def soft_update(net, net_target):
         param_target.data.copy_(param_target.data * (1.0 - tau) + param.data * tau)
 
 def main():
-    # env = gym.make('Pendulum-v0')
-    env = gym.make('BipedalWalker-v3')
+
+    if config["env"] == "Pendulum":
+        env = gym.make('Pendulum-v0')
+        max_ep_length = 1000
+        render_flag = 100
+        save_flag = 1000
+    elif config["env"] == "BipedalWalker":
+        max_ep_length = 25000
+        render_flag = 1000
+        save_flag = 1000
+        env = gym.make('BipedalWalker-v3')
+    elif config["env"] == "MountainCar":
+        max_ep_length = 200
+        render_flag = 20
+        save_flag = 100
+        env = gym.make('MountainCarContinuous-v0')
+    elif config["env"] == "LunarLander":
+        max_ep_length = 2000
+        render_flag = 100
+        save_flag = 500
+        env = gym.make('LunarLanderContinuous-v2')
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(device)
@@ -143,72 +163,79 @@ def main():
     mu_target.load_state_dict(mu.state_dict())
 
     score = 0.0
-    ep_score = 0.0
     print_interval = 20
+    train_flag = True
 
     log_dict = dict()
 
     mu_optimizer = optim.Adam(mu.parameters(), lr=lr_mu)
-    q_optimizer  = optim.Adam(q.parameters(), lr=lr_q)
+    q_optimizer  = optim.Adam(q.parameters(), lr=lr_q, weight_decay = 0.01)
     ou_noise = OrnsteinUhlenbeckNoise(mu=np.zeros(env.action_space.shape[0]))
 
-    for n_epi in range(10000):
+    for n_epi in range(max_ep_length):
         s = env.reset()
         ep_score = 0
 
-        for step in range(max_step):
-            if n_epi > 5000 and n_epi % 100 == 0:
+        done = False
+        step = 0
+        while not done and step < env._max_episode_steps:
+            step += 1
+            if n_epi % render_flag == 0:
                 env.render()
             a = mu(torch.from_numpy(s).float().to(device))
             a = a.cpu().detach().numpy() + ou_noise()
             s_prime, r, done, info = env.step(a)
-            memory.put((s,a,r/100.0,s_prime,done))
+            memory.put((s,a,r,s_prime,done))
             score += r
             ep_score += r
             s = s_prime
-            if done:
-                break
 
-        if memory.size()>2000:
-            for i in range(10):
+            if memory.size()>2000:
+                if train_flag == True:
+                    train_flag = False
+                    print("Train Starts!")
                 train(mu, mu_target, q, q_target, memory, q_optimizer, mu_optimizer)
                 soft_update(mu, mu_target)
                 soft_update(q,  q_target)
 
-        if n_epi%print_interval==0 and n_epi!=0:
+        if n_epi%print_interval==0 and n_epi != 0:
             print("# of episode :{}, avg score : {:.1f}".format(n_epi, score/print_interval))
             log_dict['20_epi_avg_return'] = score/print_interval
             score = 0.0
 
-        if n_epi % 1000 == 0:
+        if n_epi % save_flag == 0:
             torch.save(q.state_dict(), ''.join((wandb.run.dir, '_model_' + str(n_epi) + '.pt')))
+            torch.save(q_target.state_dict(), ''.join((wandb.run.dir, '_target_' + str(n_epi) + '.pt')))
+            torch.save(mu.state_dict(), ''.join((wandb.run.dir, '_mu_' + str(n_epi) + '.pt')))
+            torch.save(mu_target.state_dict(), ''.join((wandb.run.dir, '_mu_target_' + str(n_epi) + '.pt')))
 
         log_dict['ep_return'] = ep_score
         wandb.log(log_dict)
 
-    torch.save(q.state_dict(), ''.join((wandb.run.dir, '_model_final.pt')))
+    torch.save(mu.state_dict(), ''.join((wandb.run.dir, '_mu_final.pt')))
     env.close()
 
 if __name__ == '__main__':
 
     # Hyperparameters
-    lr_mu = 0.0005
+    lr_mu = 0.0001
     lr_q = 0.001
     gamma = 0.99
-    batch_size = 32
-    buffer_limit = 50000
-    tau = 0.005  # for target network soft update
+    batch_size = 64
+    buffer_limit = 1000000
+    tau = 0.001  # for target network soft update
 
-    max_step = 10000
-
+    # env list: Pendulum BipedalWalker MountainCar LunarLander
     config = {
+        "env":"MountainCarContinuous",
         "q_lr":lr_q,
         "mu_lr":lr_mu,
         "gamma":gamma,
-        "tau":tau
+        "tau":tau,
+        "batch_size":batch_size
     }
 
-    wandb.init(project='Bipedal-DDPG',
+    wandb.init(project='MountainCarContinuous-DDPG',
                config=config)
 
     main()
