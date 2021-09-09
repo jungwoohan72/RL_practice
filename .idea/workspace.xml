@@ -10,21 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DDPG/LunarLander/files_mu_final.pt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDPG/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDPG/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDPG/wandb/debug-internal.log" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/debug-internal.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDPG/wandb/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDPG/wandb/latest-run" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/latest-run" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/files/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/files/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/files/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/files/output.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/files/wandb-summary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/logs/debug-internal.log" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/logs/debug-internal.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/run-2m331w16.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/DDPG/wandb/run-20210907_192815-2m331w16/run-2m331w16.wandb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPO/PPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/PPO/PPO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-27-DDPG.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-08-27-DDPG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../jungwoohan72.github.io" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -88,11 +75,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.test">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="A3C" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL_practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,14 +202,9 @@
       <workItem from="1631011352818" duration="167000" />
       <workItem from="1631012434209" duration="90000" />
       <workItem from="1631061813501" duration="7408000" />
-      <workItem from="1631162422479" duration="932000" />
-    </task>
-    <task id="LOCAL-00022" summary="REINFORCE implementation">
-      <created>1628516153091</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1628516153091</updated>
+      <workItem from="1631162422479" duration="949000" />
+      <workItem from="1631163382364" duration="6000" />
+      <workItem from="1631163411520" duration="91000" />
     </task>
     <task id="LOCAL-00023" summary="REINFORCE implementation">
       <created>1628572173638</created>
@@ -565,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631012515272</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="DDPG">
+      <created>1631163358176</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1631163358176</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
