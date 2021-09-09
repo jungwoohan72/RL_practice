@@ -5,6 +5,7 @@ import random
 import collections
 import wandb
 import json
+import pickle
 import numpy as np
 import torch
 import torch.nn as nn
@@ -147,15 +148,33 @@ def main():
         render_flag = 100
         save_flag = 500
         env = gym.make('LunarLanderContinuous-v2')
+    elif config["env"] == "Acrobot":
+        max_ep_length = 2000
+        render_flag = 100
+        save_flag = 1000
+        env = gym.make('Acrobot-v1')
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(device)
+
+    continue_train = False
+    PATH = './wandb/run-20210907_192815-2m331w16/'
 
     s_dim = env.observation_space.shape[0]
     a_dim = env.action_space.shape[0]
     print("State dim: ", s_dim, "Action dim: ", a_dim)
 
     memory = ReplayBuffer(device = device)
+
+    if continue_train:
+        q, q_target = QNet(s_dim, env.action_space, l1_channel = 400, l2_channel = 300).to(device), QNet(s_dim, env.action_space, l1_channel = 400, l2_channel = 300).to(device)
+        mu, mu_target = MuNet(s_dim, env.action_space, l1_channel = 400, l2_channel = 300).to(device), MuNet(s_dim, env.action_space, l1_channel = 400, l2_channel = 300).to(device)
+        q.load_state_dict(torch.load(PATH+'files_model_1500.pt'))
+        q_target.load_state_dict(torch.load(PATH+'files_target_1500.pt'))
+        mu.load_state_dict(torch.load(PATH+'files_mu_1500.pt'))
+        mu_target.load_state_dict(torch.load(PATH+'files_mu_target_1500.pt'))
+        with open(''.join((wandb.run.dir, '_replay_buffer.pkl')),'rb') as f:
+            memory.buffer = pickle.load(f)
 
     q, q_target = QNet(s_dim, env.action_space, l1_channel = 400, l2_channel = 300).to(device), QNet(s_dim, env.action_space, l1_channel = 400, l2_channel = 300).to(device)
     q_target.load_state_dict(q.state_dict())
@@ -172,7 +191,7 @@ def main():
     q_optimizer  = optim.Adam(q.parameters(), lr=lr_q, weight_decay = 0.01)
     ou_noise = OrnsteinUhlenbeckNoise(mu=np.zeros(env.action_space.shape[0]))
 
-    for n_epi in range(max_ep_length):
+    for n_epi in range(max_ep_length+1):
         s = env.reset()
         ep_score = 0
 
@@ -213,6 +232,9 @@ def main():
         wandb.log(log_dict)
 
     torch.save(mu.state_dict(), ''.join((wandb.run.dir, '_mu_final.pt')))
+    with open(''.join((wandb.run.dir, '_replay_buffer.pkl')),'wb') as f:
+        pickle.dump(memory.buffer, f)
+
     env.close()
 
 if __name__ == '__main__':
@@ -227,7 +249,7 @@ if __name__ == '__main__':
 
     # env list: Pendulum BipedalWalker MountainCar LunarLander
     config = {
-        "env":"MountainCar",
+        "env":"Acrobot",
         "q_lr":lr_q,
         "mu_lr":lr_mu,
         "gamma":gamma,
@@ -235,7 +257,7 @@ if __name__ == '__main__':
         "batch_size":batch_size
     }
 
-    wandb.init(project='MountainCar-DDPG',
+    wandb.init(project='Acrobot-DDPG',
                config=config)
 
     main()

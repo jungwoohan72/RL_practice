@@ -97,7 +97,7 @@ def main():
     n_eps = 10000
     avg_score = 0.0
 
-    wandb.init(project='ppo-cartpole')
+    wandb.init(project='ppo-acrobot')
 
     for n_epi in range(n_eps):
         s = env.reset()

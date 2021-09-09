@@ -38,8 +38,9 @@ class MuNet(nn.Module):
         return mu
 
 def main():
-    # env = gym.make('Pendulum-v0')
-    env = gym.make('BipedalWalker-v3')
+    env = gym.make('Pendulum-v0')
+    # env = gym.make('BipedalWalker-v3')
+    # env = gym.make('LunarLanderContinuous-v2')
 
     s_dim = env.observation_space.shape[0]
     a_dim = env.action_space.shape[0]
@@ -68,7 +69,7 @@ def main():
 
 if __name__ == '__main__':
 
-    PATH = './wandb/run-20210907_160807-1b7ma0tv/files_mu_1500.pt'
+    PATH = './pendulum/files_mu_1000.pt'
 
     main()
 
