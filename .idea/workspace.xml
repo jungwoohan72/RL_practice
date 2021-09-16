@@ -3,23 +3,22 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakeSettings">
-    <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
-    </configurations>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="">
+    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="DDPG">
+      <change afterPath="$PROJECT_DIR$/../ME491/.idea/ME491.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ME491/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ME491/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW1/prob1_value_iter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ME491/HW/ME491_HW1/prob1_value_iter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RL_practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RL_practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ClangdSettings">
-    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -29,8 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../ME491" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -50,13 +48,8 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="cf.first.check.clang-format" value="false" />
-    <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/A2C" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -69,55 +62,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/DDPG/LunarLander" />
       <recent name="C:\Users\Jungwoo\PycharmProjects\RL_practice\A2C" />
       <recent name="C:\Users\Jungwoo\PycharmProjects\jungwoohan72.github.io\category" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="A3C" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RL_practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/A3C" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/A3C/A3C.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="PPO" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RL_practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PPO" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PPO/PPO.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.prob1_value_iter">
+    <configuration name="DDPG" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL_practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,7 +79,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DDPG/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DDPG/DDPG.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="prob1_value_iter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ME491" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ME491/HW/ME491_HW1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ME491/HW/ME491_HW1/prob1_value_iter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,11 +117,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DDPG" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FetchPickAndPlace" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DDPG/train.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FetchPickAndPlace/train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,13 +151,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="train_temp (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RL_practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FetchPickAndPlace" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FetchPickAndPlace/train_temp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.prob1_value_iter" />
         <item itemvalue="Python.train" />
-        <item itemvalue="Python.PPO" />
         <item itemvalue="Python.train_DQN" />
-        <item itemvalue="Python.A3C" />
+        <item itemvalue="Python.DDPG" />
+        <item itemvalue="Python.train_temp (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -198,13 +190,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
-      <workItem from="1629782385796" duration="8472000" />
-      <workItem from="1631011352818" duration="167000" />
-      <workItem from="1631012434209" duration="90000" />
-      <workItem from="1631061813501" duration="7408000" />
-      <workItem from="1631162422479" duration="949000" />
-      <workItem from="1631163382364" duration="6000" />
-      <workItem from="1631163411520" duration="91000" />
+    </task>
+    <task id="LOCAL-00020" summary="REINFORCE implementation">
+      <created>1628515246673</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1628515246673</updated>
+    </task>
+    <task id="LOCAL-00021" summary=".">
+      <created>1628515262141</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1628515262141</updated>
+    </task>
+    <task id="LOCAL-00022" summary="REINFORCE implementation">
+      <created>1628516153091</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1628516153091</updated>
     </task>
     <task id="LOCAL-00023" summary="REINFORCE implementation">
       <created>1628572173638</created>
@@ -500,63 +506,39 @@
       <option name="project" value="LOCAL" />
       <updated>1629779864442</updated>
     </task>
-    <task id="LOCAL-00065" summary=".">
-      <created>1629792472491</created>
+    <task id="LOCAL-00065" summary="Paper update">
+      <created>1629962333322</created>
       <option name="number" value="00065" />
       <option name="presentableId" value="LOCAL-00065" />
       <option name="project" value="LOCAL" />
-      <updated>1629792472491</updated>
+      <updated>1629962333322</updated>
     </task>
-    <task id="LOCAL-00066" summary="Multi-agent">
-      <created>1630394999979</created>
+    <task id="LOCAL-00066" summary="Paper update">
+      <created>1630284666217</created>
       <option name="number" value="00066" />
       <option name="presentableId" value="LOCAL-00066" />
       <option name="project" value="LOCAL" />
-      <updated>1630394999980</updated>
+      <updated>1630284666217</updated>
     </task>
-    <task id="LOCAL-00067" summary="Conda tips">
-      <created>1630398010352</created>
+    <task id="LOCAL-00067" summary="Paper update">
+      <created>1630328688368</created>
       <option name="number" value="00067" />
       <option name="presentableId" value="LOCAL-00067" />
       <option name="project" value="LOCAL" />
-      <updated>1630398010352</updated>
+      <updated>1630328688368</updated>
     </task>
-    <task id="LOCAL-00068" summary="Multi-agent attention">
-      <created>1630398027316</created>
+    <task id="LOCAL-00068" summary="DDPG">
+      <created>1630387938165</created>
       <option name="number" value="00068" />
       <option name="presentableId" value="LOCAL-00068" />
       <option name="project" value="LOCAL" />
-      <updated>1630398027316</updated>
+      <updated>1630387938165</updated>
     </task>
-    <task id="LOCAL-00069" summary="tips">
-      <created>1630398204810</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1630398204810</updated>
-    </task>
-    <task id="LOCAL-00070" summary="DDPG">
-      <created>1631012515272</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1631012515272</updated>
-    </task>
-    <task id="LOCAL-00071" summary="DDPG">
-      <created>1631163358176</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1631163358176</updated>
-    </task>
-    <option name="localTasksCounter" value="72" />
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
     <option name="startingDirectory" value="C:\Users\Jungwoo\PycharmProjects\Operation_Research" />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -579,18 +561,26 @@
     <MESSAGE value="Actor Critic" />
     <MESSAGE value="Search" />
     <MESSAGE value="DP" />
+    <MESSAGE value="." />
     <MESSAGE value="Hyundai" />
     <MESSAGE value="About" />
     <MESSAGE value="A3C" />
     <MESSAGE value="AC" />
     <MESSAGE value="Multi-robot dynamic task allocation for exploration and destruction" />
     <MESSAGE value="PPO" />
-    <MESSAGE value="." />
-    <MESSAGE value="Multi-agent" />
-    <MESSAGE value="Conda tips" />
-    <MESSAGE value="Multi-agent attention" />
-    <MESSAGE value="tips" />
+    <MESSAGE value="Paper update" />
     <MESSAGE value="DDPG" />
     <option name="LAST_COMMIT_MESSAGE" value="DDPG" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../ME491/HW/ME491_HW1/prob1_value_iter.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
