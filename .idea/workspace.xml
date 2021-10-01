@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="ME491">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2009-08-06-edge-case-no-body-content.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2009-08-06-edge-case-no-body-content.md" afterDir="false" />
+    <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="Project List Updated">
+      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-10-01-project-list.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-10-01-project-list.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
-    </task>
-    <task id="LOCAL-00022" summary="REINFORCE implementation">
-      <created>1628516153091</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1628516153091</updated>
     </task>
     <task id="LOCAL-00023" summary="REINFORCE implementation">
       <created>1628572173638</created>
@@ -527,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633056060155</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Project List Updated">
+      <created>1633056859111</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1633056859111</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -564,6 +563,7 @@
     <MESSAGE value="Paper update" />
     <MESSAGE value="DDPG" />
     <MESSAGE value="ME491" />
-    <option name="LAST_COMMIT_MESSAGE" value="ME491" />
+    <MESSAGE value="Project List Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project List Updated" />
   </component>
 </project>
