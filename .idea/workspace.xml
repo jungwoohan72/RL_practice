@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="Project List Updated">
-      <change beforePath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-10-01-project-list.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jungwoohan72.github.io/_posts/2021-10-01-project-list.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW1/prob1_value_iter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ME491/HW/ME491_HW1/prob1_value_iter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW2/prob2_policy_iter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ME491/HW/ME491_HW2/prob2_policy_iter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +22,8 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../jungwoohan72.github.io" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../ME491" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -58,7 +61,7 @@
       <recent name="C:\Users\Jungwoo\PycharmProjects\jungwoohan72.github.io\category" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.prob1_value_iter">
+  <component name="RunManager" selected="Python.prob2_policy_iter">
     <configuration name="DDPG" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL_practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,6 +96,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ME491/HW/ME491_HW1/prob1_value_iter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="prob2_policy_iter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ME491" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ME491/HW/ME491_HW2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ME491/HW/ME491_HW2/prob2_policy_iter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,34 +167,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train_temp (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RL_practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FetchPickAndPlace" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FetchPickAndPlace/train_temp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.prob2_policy_iter" />
         <item itemvalue="Python.prob1_value_iter" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.train_DQN" />
         <item itemvalue="Python.DDPG" />
-        <item itemvalue="Python.train_temp (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -182,13 +185,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
-    </task>
-    <task id="LOCAL-00024" summary="REINFORCE implementation">
-      <created>1628572252988</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1628572252988</updated>
     </task>
     <task id="LOCAL-00025" summary=".">
       <created>1628572940172</created>
@@ -526,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633056924865</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Project List Updated">
+      <created>1633057007462</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1633057007462</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
