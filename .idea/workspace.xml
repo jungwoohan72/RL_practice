@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cad703d-8590-403a-b48f-eedf228d65cf" name="Changes" comment="ME491">
-      <change afterPath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/load_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/load_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_backward_policy_iter1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_backward_q_table_iter1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_forward_policy_2000000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_forward_policy_iter1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_forward_policy_iter2.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_forward_policy_iter3.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_forward_q_table_2000000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_forward_q_table_iter1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_forward_q_table_iter2.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_forward_q_table_iter3.npy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_lambda_backward.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_lambda_backward.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_lambda_forward.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ME491/HW/ME491_HW3/prob3_sarsa_lambda_forward.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -45,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ME491/HW/ME491_HW2" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive - kaist.ac.kr/Coursework/2021 가을/ME491/HW/HW2/prob2_policy_iter.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -85,19 +95,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="prob1_value_iter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ME491" />
+    <configuration name="prob2_policy_iter (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RL_practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ME491/HW/ME491_HW1" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/OneDrive - kaist.ac.kr/Coursework/2021 가을/ME491/HW/HW2" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ME491/HW/ME491_HW1/prob1_value_iter.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/OneDrive - kaist.ac.kr/Coursework/2021 가을/ME491/HW/HW2/prob2_policy_iter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,10 +182,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.load_data" />
-        <item itemvalue="Python.prob3_sarsa_lambda_backward" />
         <item itemvalue="Python.prob3_sarsa_lambda_forward" />
+        <item itemvalue="Python.prob3_sarsa_lambda_backward" />
+        <item itemvalue="Python.prob2_policy_iter (1)" />
         <item itemvalue="Python.prob2_policy_iter" />
-        <item itemvalue="Python.prob1_value_iter" />
       </list>
     </recent_temporary>
   </component>
@@ -187,20 +197,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627864680264</updated>
-    </task>
-    <task id="LOCAL-00028" summary=".">
-      <created>1628573967867</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1628573967867</updated>
-    </task>
-    <task id="LOCAL-00029" summary=".">
-      <created>1628584327870</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1628584327870</updated>
     </task>
     <task id="LOCAL-00030" summary=".">
       <created>1628585111991</created>
@@ -531,7 +527,21 @@
       <option name="project" value="LOCAL" />
       <updated>1633580047350</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="ME491">
+      <created>1633612639201</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1633612639201</updated>
+    </task>
+    <task id="LOCAL-00078" summary="ME491">
+      <created>1633612664850</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1633612664850</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
