@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AI504/.idea/AI504.iml" filepath="$PROJECT_DIR$/../AI504/.idea/AI504.iml" />
       <module fileurl="file://$PROJECT_DIR$/../DHC/.idea/DHC.iml" filepath="$PROJECT_DIR$/../DHC/.idea/DHC.iml" />
       <module fileurl="file://$PROJECT_DIR$/../ME491/.idea/ME491.iml" filepath="$PROJECT_DIR$/../ME491/.idea/ME491.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Operation_Research/.idea/Operation_Research.iml" filepath="$PROJECT_DIR$/../Operation_Research/.idea/Operation_Research.iml" />
