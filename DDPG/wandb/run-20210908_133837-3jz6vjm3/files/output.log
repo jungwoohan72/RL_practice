@@ -1,0 +1,8 @@
+
+cuda
+Traceback (most recent call last):
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DDPG/train.py", line 263, in <module>
+    main()
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DDPG/train.py", line 164, in main
+    a_dim = env.action_space.shape[0]
+IndexError: tuple index out of range

@@ -1,0 +1,10 @@
+cuda
+State dim:  6 Action dim:  ()
+Traceback (most recent call last):
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DDPG/train.py", line 263, in <module>
+    main()
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DDPG/train.py", line 179, in main
+    q, q_target = QNet(s_dim, env.action_space, l1_channel = 400, l2_channel = 300).to(device), QNet(s_dim, env.action_space, l1_channel = 400, l2_channel = 300).to(device)
+  File "/home/jungwoo/catkin_ws/src/RL_practice/DDPG/train.py", line 73, in __init__
+    self.fc_a = nn.Linear(action_space.shape[0],int(l1_channel/2))
+IndexError: tuple index out of range
